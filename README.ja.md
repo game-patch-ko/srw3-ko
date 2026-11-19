@@ -306,8 +306,6 @@ xdelta3 -e -9 -s "Dai-3-Ji Super Robot Taisen (J).smc" out/srw3_ko.smc srw3_ko.x
 
 ## 📢 AI利用の告知
 
-このプロジェクトは、AnthropicのAIモデルであるClaudeを利用して作成・開発されました。
-責任は作成者にあり、Claudeは道具であって著作者や貢献者ではありません。
+このプロジェクトは、AnthropicのAIモデルであるClaudeと一緒に制作しました。責任は作成者にあります。
 
-This project was written and developed using Claude, an AI model by Anthropic.
-The author is responsible for it; Claude is a tool and not an author or contributor.
+This project was made together with Claude, an AI model by Anthropic. The author is responsible for it.
