@@ -6,11 +6,11 @@
 
 スーパーファミコン **「第3次スーパーロボット大戦」**（1993）のセリフ、メニュー、ステージタイトル、タイトルロゴまでを韓国語に翻訳した非公式ファンパッチ
 
-[![Release](https://img.shields.io/badge/release-v0.9%20beta-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
+[![Release](https://img.shields.io/badge/release-v0.9.1%20beta-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
 [![Platform](https://img.shields.io/badge/platform-SFC%20%2F%20SNES-6b5b95?style=flat-square)](#-パッチの当て方)
 [![Patch](https://img.shields.io/badge/patch-xdelta%20%C2%B7%20IPS-informational?style=flat-square)](#-パッチの当て方)
 [![ROM](https://img.shields.io/badge/ROM-1.5MB%20%E2%86%92%202MB-2e8b57?style=flat-square)](#-仕組み)
-[![Font](https://img.shields.io/badge/font-NanumGothic-03c75a?style=flat-square)](#-フォントとライセンス)
+[![Font](https://img.shields.io/badge/font-MonaS12-03c75a?style=flat-square)](#-フォントとライセンス)
 
 [**ダウンロード**](https://github.com/game-patch-ko/srw3-ko/releases) · [パッチの当て方](#-パッチの当て方) · [不具合の報告](#-不具合の報告) · [仕組み](#-仕組み) · [ビルド方法](#-自分でビルドする) · [権利について](#-権利について)
 
@@ -23,7 +23,7 @@
 | | |
 |---|---|
 | 📝 **ゲーム全体を翻訳** | セリフ、プロローグ・エンディング、パイロット・ユニット・武器名、地形、メニューやウィンドウの文言まで、3,489個の断片を翻訳しました。 |
-| 🔤 **完成形ハングル2,350字** | ROMを2MBに拡張し、KS X 1001の完成形ハングル2,350字をナヌムゴシック12pxで収録しました。字数を削った組み合わせ方式ではありません。 |
+| 🔤 **完成形ハングル2,350字** | ROMを2MBに拡張し、KS X 1001の完成形ハングル2,350字を12pxのドットフォントMonaS12で収録しました。字数を削った組み合わせ方式ではありません。 |
 | 🎬 **グラフィック文字も** | ステージ導入タイトル51個（「제1화 『암운』」＝「第1話『暗雲』」）とタイトルロゴをハングルで描き直しました。 |
 | 🗣️ **キャラクターごとの口調** | 十三の関西弁は慶尚道方言に、ギャリソンの丁寧語は「~사옵니다」に、ジャックの英語混じりの口調はそのまま再現しました。 |
 | 📐 **画面幅に合わせた改行** | ゲームの行幅の上限（会話240px、戦闘200px）を実測し、すべてのセリフをその範囲に収めました。 |
@@ -125,8 +125,8 @@ xdelta3 -d -s "Dai-3-Ji Super Robot Taisen (J).smc" srw3_ko.xdelta srw3_ko.smc
 | 項目 | 値 |
 |---|---|
 | サイズ | 2,097,152バイト（2MB） |
-| CRC32 | `AEDB3DCB` |
-| SHA-1 | `c1097046518c36a228a91f820b6d56e8be1d7de2` |
+| CRC32 | `906E0742` |
+| SHA-1 | `e675eb578dc69e16738e1f4683fadb302444835d` |
 
 できあがった `srw3_ko.smc` をエミュレータでそのまま開きます。
 
@@ -189,7 +189,7 @@ flowchart LR
     A[テキストのバイト] --> B{先頭バイトが<br>F0~F2, E8~EF?}
     B -- いいえ --> C[元のかな・記号グリフ]
     B -- はい --> D[フックコード $B0:8025]
-    D --> E[ハングルフォント $B1:8000~<br>ナヌムゴシック12px]
+    D --> E[ハングルフォント $B1:8000~<br>MonaS12 12px]
     E --> F[ハングルを表示]
 ```
 
@@ -197,9 +197,9 @@ flowchart LR
 |---|---|
 | ROMサイズ | 1.5MB → 2MB（LoROM拡張、バンク `$B0~$BF`） |
 | 文字の解釈 | セリフ `$81:85AF`、ウィンドウテキスト `$80:C82D`、文字列出力 `$81:EDF6` の3か所をフック |
-| ハングルフォント | KS X 1001の2,350字、ナヌムゴシック12pxを白黒に変換、`$B1:8000~` |
+| ハングルフォント | KS X 1001の2,350字、ドットフォントMonaS12（12px）を変換、`$B1:8000~` |
 | テキスト配置 | 訳文をバンク `$B4~$BF` に再配置し、セリフブロック表 `$80:D2D7`、名前・ウィンドウレイアウト表 `$80:D277` を書き換え |
-| ステージタイトル | 16×16スプライトフォント（LZ圧縮）をハングルで作り直し、スプライトのまとまり51個を書き直し |
+| ステージタイトル | 16×16スプライトフォント（LZ圧縮）をナヌムゴシック15pxのハングルで作り直し、スプライトのまとまり51個を書き直し |
 | タイトルロゴ | BG2のタイル207個に「제3차 슈퍼로봇대전」を描き直し（ナヌムスクエア ExtraBold） |
 
 <details>
@@ -243,7 +243,7 @@ flowchart TD
 
 | 役割 | 担当 | やったこと |
 |---|---|---|
-| 🧑 **指揮** | 人 | ROM拡張・完成形方式、フォント（ナヌムゴシック）、表記の決定、実プレイとフィードバック |
+| 🧑 **指揮** | 人 | ROM拡張・完成形方式、フォントの選定（MonaS12）、表記の決定、実プレイとフィードバック |
 | 🧠 **統括** | Claude | 65816のリバースエンジニアリング、フック・フォント・グラフィックのパッチ、抽出・挿入ツール、翻訳のレビュー、自動検証 |
 | ✍️ **翻訳** | Claudeのサブエージェント | 翻訳ガイドラインに沿って、セリフをファイルごとに分けて並列翻訳 |
 
@@ -258,7 +258,8 @@ AIが出した訳文をそのまま使ってはいません。タグの順序、
 |---|---|
 | Python 3 | `Pillow` |
 | 元のROM | リポジトリのルートに `Dai-3-Ji Super Robot Taisen (J).smc` |
-| フォント | ナヌムゴシック（`NanumGothic.ttf`）、ナヌムスクエア ExtraBold（`NanumSquareEB.ttf`）。既定ではWindowsのユーザーフォントフォルダから探します。別の場所にある場合は環境変数 `SRW3_FONTDIR` でフォルダを指定 |
+| セリフ・メニューのフォント | [MonaS12](https://github.com/MonadABXY/mona-font) のリリース `2026.10.09` の `MonaFont-ttf.zip` を `tools/fonts/mona/` に展開（`MonaS/01 Main/MonaS12.ttf`）。別の場所なら環境変数 `SRW3_MONAS12` でファイルを指定 |
+| タイトル・ロゴのフォント | ナヌムゴシック（`NanumGothic.ttf`）、ナヌムスクエア ExtraBold（`NanumSquareEB.ttf`）。既定ではWindowsのユーザーフォントフォルダから探します。別の場所にある場合は環境変数 `SRW3_FONTDIR` でフォルダを指定 |
 
 ```bash
 cd build
@@ -294,7 +295,13 @@ xdelta3 -e -9 -s "Dai-3-Ji Super Robot Taisen (J).smc" out/srw3_ko.smc srw3_ko.x
 
 ## 🔤 フォントとライセンス
 
-ハングルのフォントには、[ナヌムゴシック](https://hangeul.naver.com/font)（セリフ・メニュー12px、ステージタイトル15px）とナヌムスクエア ExtraBold（タイトルロゴ）を白黒ビットマップに変換して使っています。どちらもNAVERがSIL Open Font License 1.1で配布しているフォントで、著作権表示とライセンス全文はリリースの `OFL.txt` にあります。
+| 使用箇所 | フォント | 制作 |
+|---|---|---|
+| セリフ・メニュー・名前（12px） | [MonaS12](https://github.com/MonadABXY/mona-font) | Monad ABXY |
+| ステージ導入タイトル（15px） | [ナヌムゴシック](https://hangeul.naver.com/font) | NAVER |
+| タイトルロゴ | ナヌムスクエア ExtraBold | NAVER |
+
+いずれもSIL Open Font License 1.1で配布されているフォントを白黒ビットマップに変換して収録しています。著作権表示とライセンス全文はリリースの `OFL.txt` にあります。v0.9ではセリフ・メニューにもナヌムゴシックを使っていましたが、v0.9.1からドットフォントMonaS12に変更しました。
 
 ## ⚖️ 権利について
 

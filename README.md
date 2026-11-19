@@ -6,11 +6,11 @@
 
 슈퍼 패미컴 **「第3次スーパーロボット大戦」**(1993)의 대사, 메뉴, 스테이지 제목, 타이틀 로고까지 한국어로 옮긴 비공식 팬 패치
 
-[![Release](https://img.shields.io/badge/release-v0.9%20beta-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
+[![Release](https://img.shields.io/badge/release-v0.9.1%20beta-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
 [![Platform](https://img.shields.io/badge/platform-SFC%20%2F%20SNES-6b5b95?style=flat-square)](#-패치-방법)
 [![Patch](https://img.shields.io/badge/patch-xdelta%20%C2%B7%20IPS-informational?style=flat-square)](#-패치-방법)
 [![ROM](https://img.shields.io/badge/ROM-1.5MB%20%E2%86%92%202MB-2e8b57?style=flat-square)](#-어떻게-동작하나요)
-[![Font](https://img.shields.io/badge/font-%EB%82%98%EB%88%94%EA%B3%A0%EB%94%95-03c75a?style=flat-square)](#-글꼴과-라이선스)
+[![Font](https://img.shields.io/badge/font-MonaS12-03c75a?style=flat-square)](#-글꼴과-라이선스)
 
 [**다운로드**](https://github.com/game-patch-ko/srw3-ko/releases) · [패치 방법](#-패치-방법) · [문제 제보](#-문제-제보) · [동작 원리](#-어떻게-동작하나요) · [직접 빌드](#-직접-빌드) · [권리와 안내](#-권리와-안내)
 
@@ -23,7 +23,7 @@
 | | |
 |---|---|
 | 📝 **게임 전체 번역** | 대사, 프롤로그·엔딩, 파일럿·유닛·무기 이름, 지형, 메뉴와 창 문구까지 3,489개 조각을 번역했습니다. |
-| 🔤 **완성형 한글 2,350자** | ROM을 2MB로 늘리고 KS X 1001 완성형 2,350자를 나눔고딕 12px로 넣었습니다. 글자를 줄여 쓰는 조합 방식이 아닙니다. |
+| 🔤 **완성형 한글 2,350자** | ROM을 2MB로 늘리고 KS X 1001 완성형 2,350자를 12px 도트 글꼴 MonaS12로 넣었습니다. 글자를 줄여 쓰는 조합 방식이 아닙니다. |
 | 🎬 **그래픽 글자까지** | 스테이지 도입 제목 51개(「제1화 『암운』」)와 타이틀 로고를 한글로 다시 그렸습니다. |
 | 🗣️ **인물별 말투** | 쥬조의 간사이 사투리는 경상도 말씨로, 개리슨의 정중한 말투는 `~사옵니다`로, 잭의 영어 섞인 말투는 그대로 살렸습니다. |
 | 📐 **화면 폭에 맞춘 줄바꿈** | 게임의 줄 폭 한도(대화 240px, 전투 200px)를 실측해 모든 대사를 그 안에 맞췄습니다. |
@@ -125,8 +125,8 @@ xdelta3 -d -s "Dai-3-Ji Super Robot Taisen (J).smc" srw3_ko.xdelta srw3_ko.smc
 | 항목 | 값 |
 |---|---|
 | 크기 | 2,097,152바이트 (2MB) |
-| CRC32 | `AEDB3DCB` |
-| SHA-1 | `c1097046518c36a228a91f820b6d56e8be1d7de2` |
+| CRC32 | `906E0742` |
+| SHA-1 | `e675eb578dc69e16738e1f4683fadb302444835d` |
 
 만든 `srw3_ko.smc`를 에뮬레이터에서 바로 엽니다.
 
@@ -189,7 +189,7 @@ flowchart LR
     A[텍스트 바이트] --> B{앞자리<br>F0~F2, E8~EF?}
     B -- 아니오 --> C[원래 가나·기호 글리프]
     B -- 예 --> D[후킹 코드 $B0:8025]
-    D --> E[한글 폰트 $B1:8000~<br>나눔고딕 12px]
+    D --> E[한글 폰트 $B1:8000~<br>MonaS12 12px]
     E --> F[한글 출력]
 ```
 
@@ -197,9 +197,9 @@ flowchart LR
 |---|---|
 | ROM 크기 | 1.5MB → 2MB (LoROM 확장, 뱅크 `$B0~$BF`) |
 | 글자 해석 | 대사 `$81:85AF`, 창 텍스트 `$80:C82D`, 문자열 출력 `$81:EDF6` 세 곳을 후킹 |
-| 한글 폰트 | KS X 1001 2,350자, 나눔고딕 12px 흑백 변환, `$B1:8000~` |
+| 한글 폰트 | KS X 1001 2,350자, 도트 글꼴 MonaS12(12px) 변환, `$B1:8000~` |
 | 텍스트 배치 | 번역문을 뱅크 `$B4~$BF`에 다시 배치하고 대사 블록 표 `$80:D2D7`, 이름·창 레이아웃 표 `$80:D277`을 고침 |
-| 스테이지 제목 | 16×16 스프라이트 글꼴(LZ 압축)을 한글로 다시 만들고 스프라이트 묶음 51개를 새로 씀 |
+| 스테이지 제목 | 16×16 스프라이트 글꼴(LZ 압축)을 나눔고딕 15px 한글로 다시 만들고 스프라이트 묶음 51개를 새로 씀 |
 | 타이틀 로고 | BG2 타일 207개에 「제3차 슈퍼로봇대전」을 다시 그림(나눔스퀘어 ExtraBold) |
 
 <details>
@@ -243,7 +243,7 @@ flowchart TD
 
 | 역할 | 담당 | 한 일 |
 |---|---|---|
-| 🧑 **작업 지휘** | 사람 | ROM 확장·완성형 방식, 글꼴(나눔고딕), 표기 결정, 실제 플레이와 피드백 |
+| 🧑 **작업 지휘** | 사람 | ROM 확장·완성형 방식, 글꼴 선택(MonaS12), 표기 결정, 실제 플레이와 피드백 |
 | 🧠 **총괄** | Claude | 65816 역공학, 후킹·폰트·그래픽 패치, 추출·삽입 도구, 번역 검토, 자동 검증 |
 | ✍️ **번역** | Claude 서브에이전트 | 번역 지침에 따라 대사를 파일별로 나눠 병렬 번역 |
 
@@ -258,7 +258,8 @@ AI가 낸 번역을 그대로 쓰지 않았습니다. 태그 순서, 완성형 �
 |---|---|
 | Python 3 | `Pillow` |
 | 원본 ROM | 저장소 루트에 `Dai-3-Ji Super Robot Taisen (J).smc` |
-| 글꼴 | 나눔고딕(`NanumGothic.ttf`), 나눔스퀘어 ExtraBold(`NanumSquareEB.ttf`). 기본은 Windows 사용자 글꼴 폴더에서 찾고, 다른 곳에 있으면 환경 변수 `SRW3_FONTDIR`로 폴더를 지정 |
+| 대사·메뉴 글꼴 | [MonaS12](https://github.com/MonadABXY/mona-font) 릴리스 `2026.10.09`의 `MonaFont-ttf.zip`을 `tools/fonts/mona/`에 풀기(`MonaS/01 Main/MonaS12.ttf`). 다른 곳이면 환경 변수 `SRW3_MONAS12`로 파일 지정 |
+| 제목·로고 글꼴 | 나눔고딕(`NanumGothic.ttf`), 나눔스퀘어 ExtraBold(`NanumSquareEB.ttf`). 기본은 Windows 사용자 글꼴 폴더에서 찾고, 다른 곳에 있으면 환경 변수 `SRW3_FONTDIR`로 폴더를 지정 |
 
 ```bash
 cd build
@@ -294,7 +295,13 @@ xdelta3 -e -9 -s "Dai-3-Ji Super Robot Taisen (J).smc" out/srw3_ko.smc srw3_ko.x
 
 ## 🔤 글꼴과 라이선스
 
-한글 글꼴은 [나눔고딕](https://hangeul.naver.com/font)(대사·메뉴 12px, 스테이지 제목 15px)과 나눔스퀘어 ExtraBold(타이틀 로고)를 흑백 비트맵으로 변환해 넣었습니다. 두 글꼴은 NAVER가 SIL Open Font License 1.1로 배포하며, 저작권 표시와 라이선스 전문은 릴리스의 `OFL.txt`에 있습니다.
+| 쓰인 곳 | 글꼴 | 만든 곳 |
+|---|---|---|
+| 대사·메뉴·이름 (12px) | [MonaS12](https://github.com/MonadABXY/mona-font) | Monad ABXY |
+| 스테이지 도입 제목 (15px) | [나눔고딕](https://hangeul.naver.com/font) | NAVER |
+| 타이틀 로고 | 나눔스퀘어 ExtraBold | NAVER |
+
+모두 SIL Open Font License 1.1로 배포되는 글꼴을 흑백 비트맵으로 변환해 넣었습니다. 저작권 표시와 라이선스 전문은 릴리스의 `OFL.txt`에 있습니다. v0.9는 대사·메뉴에도 나눔고딕을 썼고, v0.9.1부터 도트 글꼴 MonaS12로 바꿨습니다.
 
 ## ⚖️ 권리와 안내
 

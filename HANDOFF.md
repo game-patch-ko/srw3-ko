@@ -211,7 +211,7 @@ python srwtext.py build --no-tr    # 회귀 검사용: 번역 없이 재배치�
 - 배포 파일 `dist/`: `srw3_ko.xdelta`(권장), `srw3_ko.ips`, `README.txt`, `OFL.txt`(나눔고딕·나눔스퀘어 저작권 + OFL 1.1 전문, google/fonts의 nanumgothic OFL.txt 본문). 묶음 `out/srw3_ko_v0.9.zip`.
   - 빌드 후 다시 만들기: `cp out/srw3_ko.ips dist/` 그리고
     `tools/patchers/xdelta/xdelta3-3.1.0-x86_64.exe -e -9 -f -s "Dai-3-Ji Super Robot Taisen (J).smc" out/srw3_ko.smc dist/srw3_ko.xdelta`
-  - README.md·README.ja.md·dist/README.txt에 적힌 결과 ROM의 CRC32 `AEDB3DCB`, SHA-1 `c1097046...`도 빌드가 바뀌면 고쳐야 함.
+  - README.md·README.ja.md·dist/README.txt에 적힌 결과 ROM의 CRC32 `906E0742`, SHA-1 `e675eb57...`도 빌드가 바뀌면 고쳐야 함.
 - **실제 패처 도구로 검증**(사용자 지적: 그동안은 Mesen 자동 IPS 또는 빌드 ROM 직접 로드만 했음):
   - 도구: `tools/patchers/xdelta`(xdelta3 3.1.0, jmacd/xdelta-gpl), `tools/patchers/flips`(Flips v198, Alcaro/Flips).
   - 원본 사본에 xdelta·Flips(IPS)로 각각 적용 → 둘 다 `out/srw3_ko.smc`와 MD5 같음.
@@ -240,3 +240,14 @@ python srwtext.py build --no-tr    # 회귀 검사용: 번역 없이 재배치�
   - 추가 비교(`out/font_compare_mona_*.png`, `out/font_compare_thin_*.png`): 굴림체 12px(`gulim.ttc` 1번), Mona12·MonaS12·Mona8x12(MonadABXY/mona-font, OFL; 8x12는 한글 폭 7px라 부적합), 얇은물마루(BinRecycle/ThinMulmaru v1.1, OFL).
   - **변환 주의**: 물마루·얇은물마루는 12px에서 바로 흑백 변환하면 FreeType 힌팅이 1px 획을 빼먹음(하→아, 대→디). `SRW3_KOFONT_SS=10`(10배로 그려 줄이기, 격자 자동 정렬)으로 해결. 갈무리11·Mona12·MonaS12는 두 방식 결과가 2,350자 모두 같음. 처음 물마루 비교는 이 오류로 실제보다 뭉개졌음(다시 찍음).
   - 시험 빌드 환경 변수: `SRW3_KOFONT`(경로) `SRW3_KOFONT_SIZE` `SRW3_KOFONT_INDEX`(.ttc 번호) `SRW3_KOFONT_SS`. 지정하지 않으면 기존 빌드와 MD5 동일.
+
+## 16. v0.9.1 — 글꼴 MonaS12로 교체 (2026-11-19)
+
+- 사용자 결정: 대사·메뉴·이름의 12px 한글 글꼴을 **MonaS12**(Monad ABXY, OFL 1.1, RFN "Mona", 릴리스 `2026.10.09`)로 교체. 스테이지 제목(나눔고딕 15px)·타이틀 로고(나눔스퀘어)는 그대로.
+  - 빌드 기본 글꼴: `tools/fonts/mona/MonaS/01 Main/MonaS12.ttf`(git 제외, 9.4MB라 저장소에 넣지 않음) 또는 `SRW3_MONAS12`. 받는 법은 README 「직접 빌드」.
+  - MonaS12는 12px 직접 변환과 10배 확대 변환 결과가 같아 기본 경로(직접 변환) 사용.
+- 무기 이름 `핀펀넬`→`핀판넬`, `펀넬`→`판넬`(sys13 3곳 + tr). 전투 외침 대사는 무기 표 이름을 그대로 씀.
+- OFL.txt·README(한·일)·배포 README.txt에 MonaS12 표기. 배지 버전 v0.9.1.
+- 검증: 대사 14개 파일을 `make_chain.py`로 실제 렌더러에 전부 출력(2,445조각, 7개씩 병렬 약 6분) → **줄 넘침 0건**, 일반 대사 캡처 표본 정상. 전투 대사(dlg01·0C·0D, demo 모드)는 조각·줄 넘침 검사는 통과했으나 **캡처가 검은 화면**(캡처 시점 문제로 추정, 미조사) — 전투 화면 모양은 데모 전투 직접 캡처로 확인.
+- 결과 ROM: CRC32 `906E0742`, SHA-1 `e675eb578dc69e16738e1f4683fadb302444835d`. xdelta·Flips IPS로 원본에 적용해 MD5 일치 확인. 배포 묶음 `out/srw3_ko_v0.9.1.zip`, README 스크린샷 다시 찍음.
+- 자동 실행 사본 세이브(`srw3_clean.srm`, `verify.srm`)는 `.bak*_20261119`로 치워 둠(상태 저장 사본으로 메뉴를 누르면 테스트 사본에 저장될 수 있음).

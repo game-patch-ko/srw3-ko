@@ -196,11 +196,11 @@ KO: ν하이퍼바주카{END}
 
 [S036917]  N13#45
 JP: フィンファンネル{END}
-KO: 핀펀넬{END}
+KO: 핀판넬{END}
 
 [S036920]  N13#46 N13#47 N13#48 N13#49
 JP: ファンネル{END}
-KO: 펀넬{END}
+KO: 판넬{END}
 
 [S036926]  N13#4A N13#4B N13#4C N13#4D
 JP: ミサイル{END}
@@ -724,7 +724,7 @@ KO: 바다뱀{END}
 
 [S036DC6]  N13#DB
 JP: ファンネル{END}
-KO: 펀넬{END}
+KO: 판넬{END}
 
 [S036DCC]  N13#DC
 JP: メガ粒子砲{END}

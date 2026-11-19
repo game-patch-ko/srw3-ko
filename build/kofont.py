@@ -6,8 +6,8 @@ Index 0..2349 = KS X 1001 hangul in KS order.
 Glyph format = original kanji format: 32 bytes, left 8x16 column then right 8x16 column,
 1bpp, drawn area rows 2..13, columns 0..11.
 
-Default font: NanumGothic 12px (SIL Open Font License 1.1), rendered 1-bit with FreeType
-hinting. Ink is kept in rows 1..14 (most glyphs sit in rows 2..13 like the original kanji).
+Default font: MonaS12 12px (Monad ABXY, SIL Open Font License 1.1), a pixel font: rendered
+1-bit (identical to 10x supersampling for this font; v0.9 used NanumGothic). Ink is kept in rows 1..14 (most glyphs sit in rows 2..13 like the original kanji).
 """
 import os
 from PIL import Image, ImageDraw, ImageFont
@@ -36,7 +36,9 @@ def code_bytes(i):
     return bytes([PREFIX[i >> 8], i & 0xFF])
 
 
-DEFAULT_FONT = os.path.join(os.environ.get('SRW3_FONTDIR') or os.path.join(os.environ.get('LOCALAPPDATA', ''), 'Microsoft/Windows/Fonts'), 'NanumGothic.ttf')  # SRW3_FONTDIR overrides
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# MonaS12 (Monad ABXY, SIL OFL 1.1, release 2026.10.09: MonaFont-ttf.zip -> MonaS/01 Main/MonaS12.ttf)
+DEFAULT_FONT = os.environ.get('SRW3_MONAS12') or os.path.join(REPO, 'tools', 'fonts', 'mona', 'MonaS', '01 Main', 'MonaS12.ttf')
 
 
 def render_glyph(ch, font, yoff):

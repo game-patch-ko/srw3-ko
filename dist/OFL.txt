@@ -1,6 +1,11 @@
-이 한글화 패치의 한글 글꼴(대사·메뉴 12px, 스테이지 제목 15px)은 나눔고딕,
-타이틀 로고는 나눔스퀘어 ExtraBold를 흑백 비트맵으로 변환해 만들었습니다.
-두 글꼴은 SIL Open Font License 1.1에 따라 배포됩니다.
+이 한글화 패치에 쓴 글꼴(모두 흑백 비트맵으로 변환):
+  - 대사·메뉴·이름(12px): MonaS12
+  - 스테이지 도입 제목(15px): 나눔고딕
+  - 타이틀 로고: 나눔스퀘어 ExtraBold
+세 글꼴은 SIL Open Font License 1.1에 따라 배포됩니다.
+
+Mona / MonaS12: Copyright (c) 2025, Monad ABXY (https://monadabxy.com),
+with Reserved Font Name "Mona".
 
 NanumGothic: Copyright (c) 2010, NHN Corporation (http://www.nhncorp.com),
 with Reserved Font Name Nanum, Naver Nanum, NanumGothic, Naver
