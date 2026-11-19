@@ -234,3 +234,4 @@ python srwtext.py build --no-tr    # 회귀 검사용: 번역 없이 재배치�
   - 지도 미니 창: 72px 약칭이 테두리에 닿음(기존과 같음).
 - **주의**: 자동 실행용 `srw3_clean.smc`에 세이브가 생기면(상태 저장 사본으로 메뉴를 누를 때 저장될 수 있음) 새 게임 흐름이 LOAD로 바뀐다. `Documents/Mesen2/Saves/srw3_clean.srm`을 치우고 돌릴 것(2026-11-19에 `srw3_clean.srm.bak_20261119`로 옮겨 둠).
 - 남은 것: 사운드 테스트 곡명(sys18) 화면, 엔딩 실제 진행, `$80:CA09` 경로, 3화 이후 제목.
+- **피드백 경로**(2026-11-19): GitHub 이슈(양식 `.github/ISSUE_TEMPLATE/report.yml`, 한·일 병기: 종류·장면 위치·내용·스크린샷·에뮬레이터·버전). README 두 개와 배포 README.txt, 릴리스 노트에 제보 안내. 사용자와 취미가들이 플레이 테스트 중 — 다음 세션은 이슈부터 확인(`gh issue list -R game-patch-ko/srw3-ko`).
