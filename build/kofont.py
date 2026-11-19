@@ -53,16 +53,54 @@ def render_glyph(ch, font, yoff):
     return bytes(out)
 
 
+def _ss_image(ch, font_big, k, yoff, dx=0, dy=0):
+    im = Image.new('L', (16 * k, 16 * k), 0)
+    d = ImageDraw.Draw(im)
+    d.text((dx, yoff * k + dy), ch, font=font_big, fill=255)
+    return im.resize((16, 16), Image.BOX)
+
+
+def ss_align(font_big, k, yoff, sample):
+    """sub-pixel shift (dx, dy) that puts the font's pixel grid on ours: values closest to 0/255"""
+    best = None
+    for dy in range(-k // 2, k // 2 + 1):
+        for dx in range(-k // 2, k // 2 + 1):
+            score = 0
+            for c in sample:
+                score += sum(min(v, 255 - v) for v in _ss_image(c, font_big, k, yoff, dx, dy).getdata())
+            if best is None or score < best[0]:
+                best = (score, dx, dy)
+    return best[1], best[2]
+
+
+def render_glyph_ss(ch, font_big, k, yoff, dx=0, dy=0):
+    """pixel fonts: draw k times larger and box-downsample (FreeType hinting at 12px drops 1px strokes)"""
+    px = _ss_image(ch, font_big, k, yoff, dx, dy).load()
+    out = bytearray(32)
+    for y in range(16):
+        for x in range(16):
+            if px[x, y] >= 128 and x < 12 and 1 <= y <= 14:
+                out[(x // 8) * 16 + y] |= 0x80 >> (x % 8)
+    return bytes(out)
+
+
 def build_font(path=None, index=0, size=None):
     # SRW3_KOFONT / SRW3_KOFONT_SIZE: try another font without editing this file (font comparison)
     path = path or os.environ.get('SRW3_KOFONT') or DEFAULT_FONT
     size = size or int(os.environ.get('SRW3_KOFONT_SIZE', '12'))
+    index = index or int(os.environ.get('SRW3_KOFONT_INDEX', '0'))   # face in a .ttc (gulim.ttc: 1 = GulimChe)
     font = ImageFont.truetype(path, size, index=index)
     # place glyph so that its ink box sits inside rows 2..13
     top = min(font.getbbox(c)[1] for c in HANGUL[:200])
     yoff = 2 - top
+    k = int(os.environ.get('SRW3_KOFONT_SS', '0'))   # SRW3_KOFONT_SS=10: supersampled rendering for pixel fonts
+    if k:
+        big = ImageFont.truetype(path, size * k, index=index)
+        top = min(big.getbbox(c)[1] for c in HANGUL[:200]) / k
+        yoff = round(2 - top)
+        dx, dy = ss_align(big, k, yoff, '하를대화확실한')
     data = bytearray()
     for c in HANGUL:
-        data += render_glyph(c, font, yoff)
+        data += render_glyph_ss(c, big, k, yoff, dx, dy) if k else render_glyph(c, font, yoff)
     data += bytes(32 * (MAX_GLYPHS - len(HANGUL)))
     return bytes(data)
