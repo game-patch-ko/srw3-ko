@@ -1,0 +1,12 @@
+bank $88: 64 ptrs (28 unique), text bytes 1029, last text end file 040485 (free 31611 bytes)
+bank $89: 256 ptrs (228 unique), text bytes 18796, last text end file 04CAD9 (free 13607 bytes)
+bank $8A: 256 ptrs (224 unique), text bytes 14718, last text end file 053BCA (free 17462 bytes)
+bank $8B: 256 ptrs (171 unique), text bytes 10753, last text end file 05ACA5 (free 21339 bytes)
+F4 x601  048241 f4 fd 15 d9 | 04826C f4 fd 13 9a | 048286 f4 fd 08 d9 | 0482BA f4 fd 12 c5
+F6 x3  051644 f6 6d 24 f4 | 051907 f6 71 24 ff | 05190B f6 6d 24 f4
+F7 x4  04044C f7 89 01 8a | 040482 f7 05 ff 8a | 0525B4 f7 03 bc a5 | 05AC78 f7 af 20 b0
+F9 x12  0403D8 f9 85 6c 87 | 0496CD f9 d2 ac c5 | 04B99E f9 02 00 9b | 04C80E f9 09 04 29
+FA x9  040164 fa 04 3e 99 | 040175 fa 04 3e 99 | 040231 fa 04 3e b0 | 040242 fa 04 3e b0
+FB x5  040384 fb 84 05 85 | 0403B6 fb 86 13 87 | 04BE68 fb 31 08 fa | 051805 fb 4f 08 fd
+FD x561  048242 fd 15 d9 d4 | 04826D fd 13 9a 93 | 048287 fd 08 d9 d6 | 0482BB fd 12 c5 d8
+FE x1  05AC66 fe ae 17 af

@@ -1,0 +1,26 @@
+import sys
+tpl = r'''
+local out = io.open("OUTFILE", "w")
+local n = 0
+local MODE = "MODEV"
+local seq = {{9000,'a'},{9120,'b'},{9200,'right'},{9230,'right'},{9300,'a'},{9420,'down'},{9480,'a'},{9600,'b'},{9660,'b'},{9740,'start'},{9860,'b'},{9940,'x'},{10060,'b'},{10140,'y'}}
+emu.addMemoryCallback(function()
+  local s = emu.getState()
+  out:write(string.format("%04X\n", s["cpu.a"] & 0xFFFF))
+end, emu.callbackType.exec, 0xB08025)
+emu.addEventCallback(function()
+  local inp = {}
+  if MODE == "game" then
+    if n >= 5150 and n < 5300 and (n % 40) < 8 then inp.start = true end
+    if n >= 5800 and n < 8900 and (n % 60) < 6 then inp.a = true end
+    for _, s in ipairs(seq) do if n >= s[1] and n < s[1] + 6 then inp[s[2]] = true end end
+  end
+  emu.setInput(inp, 0)
+end, emu.eventType.inputPolled)
+emu.addEventCallback(function()
+  n = n + 1
+  if n >= LAST then out:close(); emu.stop(0) end
+end, emu.eventType.endFrame)
+'''
+outfile, mode, last, path = sys.argv[1:5]
+open(path, 'w').write(tpl.replace('OUTFILE', outfile).replace('MODEV', mode).replace('LAST', last))

@@ -1,0 +1,21 @@
+# ROM과 세이브 (배포 금지)
+*.smc
+*.sfc
+*.srm
+*.mss
+
+# 빌드 결과와 배포 파일 (Release 첨부로 배포)
+out/
+dist/srw3_ko.ips
+dist/srw3_ko.xdelta
+*.zip
+
+# 외부 도구와 대용량 캡처
+tools/mesen/
+tools/patchers/
+tools/shots/
+tools/rt/*/
+tools/rt/*.png
+
+__pycache__/
+*.pyc

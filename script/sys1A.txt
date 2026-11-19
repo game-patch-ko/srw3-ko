@@ -1,0 +1,115 @@
+# 제3차 슈퍼로봇대전 번역 스크립트  (sys1A)
+# - 'KO:' 줄에 번역을 씁니다. 비워 두면 원문이 그대로 들어갑니다.
+# - 태그는 지우거나 바꾸지 마세요(위치 이동은 가능):
+#     {n} 줄바꿈  {w} 키 입력 대기  {face:xx} 얼굴  {name:xx} 이름 삽입  {END} 끝
+#     {if:..} {goto:..} {rand:..} {F8:..} 은 분기(라벨 포함) — 반드시 유지
+# - 한글은 KS X 1001 완성형 2,350자만 쓸 수 있습니다(예: 똠, 뷁 불가).
+# - [라벨] 옆 '->' 는 이 조각이 {END} 없이 다음 조각으로 이어진다는 뜻입니다.
+
+[S0375F3]  N1A#00 N1A#01
+JP: ………陸{END}
+KO: ………육{END}
+
+[S0375FC]  N1A#02 N1A#03 N1A#06
+JP: ………空{END}
+KO: ………공{END}
+
+[S037605]  N1A#10
+JP: ………水{END}
+KO: ………수{END}
+
+[S03760E]  N1A#04 N1A#0F
+JP: ……水陸{END}
+KO: ……수륙{END}
+
+[S037617]  N1A#05
+JP: ……宇宙{END}
+KO: ……우주{END}
+
+[S037620]  N1A#07 N1A#08
+JP: ……空陸{END}
+KO: ……공륙{END}
+
+[S037629]  N1A#09 N1A#0A
+JP: ……水空{END}
+KO: ……수공{END}
+
+[S037632]  N1A#0B
+JP: …水陸空{END}
+KO: …수륙공{END}
+
+[S03763B]  N1A#0C
+JP: …陸地中{END}
+KO: …육지중{END}
+
+[S037644]  N1A#0D
+JP: …空地中{END}
+KO: …공지중{END}
+
+[S03764D]  N1A#0E
+JP: 空陸地中{END}
+KO: 공륙지중{END}
+
+[S037656]  N1A#11 N1A#13 N1A#15 N1A#17
+JP: 汎用{END}
+KO: 범용{END}
+
+[S03765B]  N1A#12 N1A#14 N1A#19 N1A#1B
+JP: 地上専用{END}
+KO: 지상전용{END}
+
+[S037664]  N1A#16
+JP: 宇宙専用{END}
+KO: 우주전용{END}
+
+[S03766D]  N1A#24
+JP: 反応{END}
+KO: 반응{END}
+
+[S037672]  N1A#25
+JP: 装甲{END}
+KO: 장갑{END}
+
+[S037677]  N1A#26
+JP: EN{END}
+KO: 
+
+[S03767A]  N1A#27
+JP: HP{END}
+KO: 
+
+[S03767D]  N1A#28
+JP: {END}
+KO: 
+
+[S03767E]  N1A#29
+JP: 変形{END}
+KO: 변형{END}
+
+[S037683]  N1A#2A
+JP: 分離合体{END}
+KO: 분리합체{END}
+
+[S03768C]  N1A#2B
+JP: Iフィールド{END}
+KO: I필드{END}
+
+[S037693]  N1A#2C
+JP: 分身{END}
+KO: 분신{END}
+
+[S037698]  N1A#2D
+JP: ゲッタービジョン{END}
+KO: 게타비전{END}
+
+[S0376A1]  N1A#2E
+JP: マッハスペシャル{END}
+KO: 마하스페셜{END}
+
+[S0376AA]  N1A#2F
+JP: ビーム吸収{END}
+KO: 빔흡수{END}
+
+[S0376B2]  N1A#30
+JP: 合体{END}
+KO: 합체{END}

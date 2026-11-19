@@ -1,0 +1,135 @@
+# 제3차 슈퍼로봇대전 번역 스크립트  (sys18)
+# - 'KO:' 줄에 번역을 씁니다. 비워 두면 원문이 그대로 들어갑니다.
+# - 태그는 지우거나 바꾸지 마세요(위치 이동은 가능):
+#     {n} 줄바꿈  {w} 키 입력 대기  {face:xx} 얼굴  {name:xx} 이름 삽입  {END} 끝
+#     {if:..} {goto:..} {rand:..} {F8:..} 은 분기(라벨 포함) — 반드시 유지
+# - 한글은 KS X 1001 완성형 2,350자만 쓸 수 있습니다(예: 똠, 뷁 불가).
+# - [라벨] 옆 '->' 는 이 조각이 {END} 없이 다음 조각으로 이어진다는 뜻입니다.
+
+[S0376F7]  N18#00
+JP: 時をこえて{END}
+KO: 시간을 넘어서{END}
+
+[S0376FE]  N18#01
+JP: MEMORYS{END}
+KO: 
+
+[S037706]  N18#02
+JP: さっそうたるシャア{END}
+KO: 늠름한 샤아{END}
+
+[S037710]  N18#03
+JP: マジンガーZ{END}
+KO: 마징가Z{END}
+
+[S037717]  N18#04
+JP: ゲッターロボ!{END}
+KO: 게타로보!{END}
+
+[S03771F]  N18#05
+JP: 魔装機神サイバスター{END}
+KO: 마장기신 사이버스터{END}
+
+[S03772E]  N18#06
+JP: カム・ヒア ダイターン3{END}
+KO: 컴 히어 다이탄3{END}
+
+[S03773B]  N18#07
+JP: ゆうしゃライディーン{END}
+KO: 용자 라이딘{END}
+
+[S037746]  N18#08
+JP: コン・バトラーVのテーマ{END}
+KO: 컴배틀러V의 테마{END}
+
+[S037753]  N18#09
+JP: レッツ・コンバイン{END}
+KO: 레츠 컴바인{END}
+
+[S03775D]  N18#0A
+JP: INTERMISSION{END}
+KO: 
+
+[S03776A]  N18#0B
+JP: STRATEGIC COMMAND{END}
+KO: 
+
+[S03777C]  N18#0C
+JP: LOOK AT ME{END}
+KO: 
+
+[S037787]  N18#0D
+JP: VIRTUOSITY{END}
+KO: 
+
+[S037792]  N18#0E
+JP: SHOCK{END}
+KO: 
+
+[S037798]  N18#0F
+JP: REQUIEM{END}
+KO: 
+
+[S0377A0]  N18#10
+JP: ぞうえん部隊{END}
+KO: 증원 부대{END}
+
+[S0377A9]  N18#11
+JP: DREAMER{END}
+KO: 
+
+[S0377B1]  N18#12
+JP: POPS TOWN{END}
+KO: 
+
+[S0377BB]  N18#13
+JP: ARE YOU READY?{END}
+KO: 
+
+[S0377CA]  N18#14
+JP: WILDERNESS WAR{END}
+KO: 
+
+[S0377D9]  N18#15
+JP: EVIL MACHINE{END}
+KO: 
+
+[S0377E6]  N18#16
+JP: SILENT MOON{END}
+KO: 
+
+[S0377F2]  N18#17
+JP: STILLNESS FOOTSTEP{END}
+KO: 
+
+[S037805]  N18#18
+JP: THE UNIVERSE{END}
+KO: 
+
+[S037812]  N18#19
+JP: BLACK STAR{END}
+KO: 
+
+[S03781D]  N18#1A
+JP: GROUND ZERO{END}
+KO: 
+
+[S037829]  N18#1B
+JP: MECHANICAL DANCE{END}
+KO: 
+
+[S03783A]  N18#1C
+JP: THE LAST JUDGMENT{END}
+KO: 
+
+[S03784C]  N18#1D
+JP: VIOLENT BATTLE{END}
+KO: 
+
+[S03785B]  N18#1E
+JP: THE FINAL ENEMY{END}
+KO: 
+
+[S03786B]  N18#1F
+JP: ARMAGEDDON{END}
+KO: 

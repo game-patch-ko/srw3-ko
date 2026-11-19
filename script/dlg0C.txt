@@ -1,0 +1,947 @@
+# 제3차 슈퍼로봇대전 번역 스크립트  (dlg0C)
+# - 'KO:' 줄에 번역을 씁니다. 비워 두면 원문이 그대로 들어갑니다.
+# - 태그는 지우거나 바꾸지 마세요(위치 이동은 가능):
+#     {n} 줄바꿈  {w} 키 입력 대기  {face:xx} 얼굴  {name:xx} 이름 삽입  {END} 끝
+#     {if:..} {goto:..} {rand:..} {F8:..} 은 분기(라벨 포함) — 반드시 유지
+# - 한글은 KS X 1001 완성형 2,350자만 쓸 수 있습니다(예: 똠, 뷁 불가).
+# - [라벨] 옆 '->' 는 이 조각이 {END} 없이 다음 조각으로 이어진다는 뜻입니다.
+
+[S05E3A3]  D0C#00
+JP: {name:05}「し、しまった!!」{END}
+KO: {name:05}「아, 아차!!」{END}
+
+[S05E3B0]  D0C#09
+JP: {name:05}「うわぁぁぁぁっ!!」{END}
+KO: {name:05}「으아아아아악!!」{END}
+
+[S05E3BE]  D0C#10
+JP: {name:05}「うわっ! やられたっ!!」{END}
+KO: {name:05}「으악! 당했다!!」{END}
+
+[S05E3CF]  D0C#18
+JP: {name:05}「うわっ! しまった!!」{END}
+KO: {name:05}「으악! 아차!!」{END}
+
+[S05E3DF]  D0C#1C
+JP: {name:05}「うわっちゃあ!{n}やられちまったぜ!!」{END}
+KO: {name:05}「으아차! 당해 버렸어!!」{END}
+
+[S05E3F6]  D0C#22
+JP: {name:05}「うわああああっ!!」{END}
+KO: {name:05}「으아아아악!!」{END}
+
+[S05E404]  D0C#2A
+JP: {name:05}「ちっ!! オレもヤキが{n}まわったもんだぜ!!」{END}
+KO: {name:05}「쳇!! 나도{n}한물갔구먼!!」{END}
+
+[S05E41F]  D0C#31
+JP: {name:05}「うわあっ!! や、やられたあっ!」{END}
+KO: {name:05}「으악!! 다, 당했다!」{END}
+
+[S05E434]  D0C#37
+JP: {name:05}「うわあぁぁぁっ!!」{END}
+KO: {name:05}「으아아아악!!」{END}
+
+[S05E442]  D0C#45
+JP: {name:05}「きゃあああっ!!」{END}
+KO: {name:05}「꺄아아악!!」{END}
+
+[S05E44F]  D0C#4B
+JP: {name:05}「うわっ!!」{END}
+KO: {name:05}「으악!!」{END}
+
+[S05E459]  D0C#57
+JP: {name:05}「う、うおおおっ!!」{END}
+KO: {name:05}「으, 우오오오!!」{END}
+
+[S05E467]  D0C#5E
+JP: {name:05}「しまった!! やられたっ!」{END}
+KO: {name:05}「아차!! 당했다!」{END}
+
+[S05E479]  D0C#7A
+JP: {name:05}「きゃああっ!!」{END}
+KO: {name:05}「꺄아악!!」{END}
+
+[S05E485]  D0C#82
+JP: {name:05}「うおおおおおっ!」{END}
+KO: {name:05}「우오오오오!」{END}
+
+[S05E492]  D0C#01
+JP: {name:05}「うわっ!! こ、このままじゃ{n}やられる!」{END}
+KO: {name:05}「으악!! 이, 이대로는{n}당한다!」{END}
+
+[S05E4AB]  D0C#0A
+JP: {name:05}「ダメだ、このままじゃ{n}もたないっ!!」{END}
+KO: {name:05}「안 돼, 이대로는 못{n}버텨!!」{END}
+
+[S05E4C2]  D0C#11
+JP: {name:05}「ヤバイっ! このままじゃ{n}やられちまうっ!!」{END}
+KO: {name:05}「위험해! 이대로는{n}당하겠어!!」{END}
+
+[S05E4DD]  D0C#19
+JP: {name:05}「うわっ! や、やられる!」{END}
+KO: {name:05}「으악! 다, 당한다!」{END}
+
+[S05E4EE]  D0C#1D
+JP: {name:05}「うわっ!! このままじゃ{n}ヤバイぞ!」{END}
+KO: {name:05}「으악!! 이대로는{n}위험해!」{END}
+
+[S05E505]  D0C#23
+JP: {name:05}「ぐわっ!! まずい!{n}このままでは!!」{END}
+KO: {name:05}「크악!! 큰일이다!{n}이대로는!!」{END}
+
+[S05E51D]  D0C#2B
+JP: {name:05}「くっ! このままじゃヤバイぜ!!」{END}
+KO: {name:05}「큭! 이대로는{n}위험하다고!!」{END}
+
+[S05E532]  D0C#32
+JP: {name:05}「うわっ!! や、やばいっ!」{END}
+KO: {name:05}「으악!! 위, 위험해!」{END}
+
+[S05E544]  D0C#38
+JP: {name:05}「うわっ!! こ、このままじゃ{n}やられちまうぜ!」{END}
+KO: {name:05}「으악!! 이, 이대로는{n}당하겠다고!」{END}
+
+[S05E560]  D0C#46
+JP: {name:05}「うっ!! ダメだわ!{n}これじゃやられちゃう!!」{END}
+KO: {name:05}「윽!! 안 돼! 이러다{n}당하겠어!!」{END}
+
+[S05E57C]  D0C#51
+JP: {name:05}「わあぁぁっ!!{n}や、やられちゃうっ!!」{END}
+KO: {name:05}「와아아악!! 다,{n}당하겠어!!」{END}
+
+[S05E594]  D0C#58
+JP: {name:05}「うわっ!! も、もつのか!?」{END}
+KO: {name:05}「으악!! 버, 버틸 수{n}있을까!?」{END}
+
+[S05E5A7]  D0C#5F
+JP: {name:05}「うわっ! これはちょっと{n}ヤバイかな・・・」{END}
+KO: {name:05}「으악! 이건 좀{n}위험한데・・・」{END}
+
+[S05E5C1]  D0C#6B
+JP: {name:05}「うわっ! こ、これじゃ{n}やられちまう!」{END}
+KO: {name:05}「으악! 이, 이러다{n}당하겠어!」{END}
+
+[S05E5D9]  D0C#77
+JP: {name:05}「うわっ! や、やられる!!」{END}
+KO: {name:05}「으악! 다, 당한다!!」{END}
+
+[S05E5EB]  D0C#7B
+JP: {name:05}「直撃!?」{END}
+KO: {name:05}「직격!?」{END}
+
+[S05E5F6]  D0C#83
+JP: {name:05}「ぐっ! こいつはちと{n}ヤバイかな」{END}
+KO: {name:05}「큭! 이건 좀 위험한데」{END}
+
+[S05E60B]  D0C#02
+JP: {name:05}「くっ! まだだ! まだいける!!」{END}
+KO: {name:05}「큭! 아직이다! 아직 할{n}수 있어!!」{END}
+
+[S05E620]  D0C#0B
+JP: {name:05}「この程度のダメージなら!」{END}
+KO: {name:05}「이 정도 대미지라면!」{END}
+
+[S05E633]  D0C#12
+JP: {name:05}「くっ!! まだいけるぜ!!」{END}
+KO: {name:05}「큭!! 아직 할 수{n}있다고!!」{END}
+
+[S05E645]  D0C#1A
+JP: {name:05}「!! まだだ!!」{END}
+KO: {name:05}「!! 아직이다!!」{END}
+
+[S05E652]  D0C#1E
+JP: {name:05}「あいたっ! けど、この程度なら{n}まだまだいけるぜ!」{END}
+KO: {name:05}「아얏! 하지만 이 정도면{n}아직 문제없어!」{END}
+
+[S05E672]  D0C#24
+JP: {name:05}「うおっ!! これしきのことで!!」{END}
+KO: {name:05}「우왓!! 이 정도{n}가지고!!」{END}
+
+[S05E687]  D0C#2C
+JP: {name:05}「うっ!! やるな!!」{END}
+KO: {name:05}「윽!! 제법이군!!」{END}
+
+[S05E696]  D0C#33
+JP: {name:05}「あいたたっ! やったな{n}こんちくしょうっ!!」{END}
+KO: {name:05}「아야야! 해 봤겠다, 이{n}자식!!」{END}
+
+[S05E6B1]  D0C#39
+JP: {name:05}「うあっ! やりやがったなっ!」{END}
+KO: {name:05}「으앗! 해 봤겠다!」{END}
+
+[S05E6C4]  D0C#47
+JP: {name:05}「きゃあっ!」{END}
+KO: {name:05}「꺄악!」{END}
+
+[S05E6CE]  D0C#52
+JP: {name:05}「わあっ!! やられたっ!」{END}
+KO: {name:05}「와악!! 당했다!」{END}
+
+[S05E6DF]  D0C#59
+JP: {name:05}「うわぁっ!」{END}
+KO: {name:05}「으아악!」{END}
+
+[S05E6E9]  D0C#60
+JP: {name:05}「くっ! やるじゃないの!」{END}
+KO: {name:05}「큭! 제법인데!」{END}
+
+[S05E6FA]  D0C#6C
+JP: {name:05}「くっ! つ、つええ・・・」{END}
+KO: {name:05}「큭! 가, 강해・・・」{END}
+
+[S05E70B]  D0C#7C
+JP: {name:05}「やる! でもまだ!」{END}
+KO: {name:05}「제법이다! 하지만{n}아직!」{END}
+
+[S05E719]  D0C#84
+JP: {name:05}「まだまだあっ!!」{END}
+KO: {name:05}「아직 멀었다!!」{END}
+
+[S05E726]  D0C#03
+JP: {name:05}「この程度なら!!」{END}
+KO: {name:05}「이 정도라면!!」{END}
+
+[S05E735]  D0C#0C
+JP: {name:05}「くっ! まだだいじょうぶだ!」{END}
+KO: {name:05}「큭! 아직 괜찮다!」{END}
+
+[S05E748]  D0C#13
+JP: {name:05}「ちっ! しかしまだ{n}だいじょうぶだ!!」{END}
+KO: {name:05}「쳇! 하지만 아직{n}괜찮아!!」{END}
+
+[S05E760]  D0C#1F
+JP: {name:05}「こんなもん、効くかい!!」{END}
+KO: {name:05}「이런 게 통할 것{n}같냐!!」{END}
+
+[S05E772]  D0C#25
+JP: {name:05}「うっ!! だが、この程度なら!」{END}
+KO: {name:05}「윽!! 하지만 이{n}정도라면!」{END}
+
+[S05E788]  D0C#2D
+JP: {name:05}「ちっ! あたっちまったか!」{END}
+KO: {name:05}「쳇! 맞아 버렸나!」{END}
+
+[S05E79A]  D0C#34
+JP: {name:05}「あいてっ!」{END}
+KO: {name:05}「아얏!」{END}
+
+[S05E7A4]  D0C#3A
+JP: {name:05}「うっ! なんの、これしき!!」{END}
+KO: {name:05}「윽! 뭘, 이 정도쯤!!」{END}
+
+[S05E7B7]  D0C#48
+JP: {name:05}「きゃっ! よかった、{n}かすりキズですんだわ」{END}
+KO: {name:05}「꺅! 다행이다, 스친{n}상처뿐이야」{END}
+
+[S05E7D1]  D0C#53
+JP: {name:05}「わっ! ま、まだだいじょうぶ」{END}
+KO: {name:05}「왁! 아, 아직 괜찮아」{END}
+
+[S05E7E4]  D0C#5A
+JP: {name:05}「うっ!」{END}
+KO: {name:05}「윽!」{END}
+
+[S05E7EC]  D0C#61
+JP: {name:05}「くっ! この程度!!」{END}
+KO: {name:05}「큭! 이 정도쯤!!」{END}
+
+[S05E7FD]  D0C#6D
+JP: {name:05}「うっ! や、やるじゃないの!」{END}
+KO: {name:05}「윽! 제, 제법인데!」{END}
+
+[S05E810]  D0C#72
+JP: {name:05}「うわっ! やったな!」{END}
+KO: {name:05}「으악! 해 봤겠다!」{END}
+
+[S05E81F]  D0C#79
+JP: {name:05}「くっ! まだまだ!!」{END}
+KO: {name:05}「큭! 아직 멀었어!!」{END}
+
+[S05E82E]  D0C#7D
+JP: {name:05}「くっ! この程度なら!」{END}
+KO: {name:05}「큭! 이 정도라면!」{END}
+
+[S05E840]  D0C#85
+JP: {name:05}「なんのっ!!」{END}
+KO: {name:05}「어림없다!!」{END}
+
+[S05E84B]  D0C#04
+JP: {name:05}「あまいっ!!」{END}
+KO: {name:05}「무르다!!」{END}
+
+[S05E856]  D0C#05
+JP: {name:05}「ムダだっ!!」{END}
+KO: {name:05}「소용없다!!」{END}
+
+[S05E861]  D0C#06
+JP: {name:05}「あたるかっ!」{END}
+KO: {name:05}「맞을까 보냐!」{END}
+
+[S05E86C]  D0C#0D
+JP: {name:05}「あたるかよっ!!」{END}
+KO: {name:05}「맞을 것 같냐!!」{END}
+
+[S05E879]  D0C#0E
+JP: {name:05}「ビームは効かないって{n}いってる!!」{END}
+KO: {name:05}「빔은 안 통한다고{n}했잖아!!」{END}
+
+[S05E890]  D0C#14
+JP: {name:05}「あたってたまるかよっ!!」{END}
+KO: {name:05}「맞아 줄 것 같으냐!!」{END}
+
+[S05E8A1]  D0C#15
+JP: {name:05}「そんなんがきくもんか!」{END}
+KO: {name:05}「그딴 게 통할까 보냐!」{END}
+
+[S05E8B1]  D0C#20
+JP: {name:05}「おおっと! ツルカメ、ツルカメ」{END}
+KO: {name:05}「오오, 이런! 아이고,{n}액땜했다」{END}
+
+[S05E8C5]  D0C#2E
+JP: {name:05}「フ・・・ゲッターのスピードを{n}あまくみるなよ!」{END}
+KO: {name:05}「후・・・게타의 스피드를{n}얕보지 마라!」{END}
+
+[S05E8E1]  D0C#2F
+JP: {name:05}「ゲッタービジョン!!」{END}
+KO: {name:05}「게타 비전!!」{END}
+
+[S05E8F0]  D0C#35
+JP: {name:05}「おっとっと」{END}
+KO: {name:05}「어이쿠」{END}
+
+[S05E8FA]  D0C#3B
+JP: {name:05}「へへーんだ!!」{END}
+KO: {name:05}「메롱이다!!」{END}
+
+[S05E906]  D0C#49
+JP: {name:05}「きゃっ! あぶなかった・・・」{END}
+KO: {name:05}「꺅! 위험했어・・・」{END}
+
+[S05E919]  D0C#54
+JP: {name:05}「ふう、たすかった」{END}
+KO: {name:05}「휴, 살았다」{END}
+
+[S05E926]  D0C#5B
+JP: {name:05}「ふう、あぶなかったぜ」{END}
+KO: {name:05}「휴, 위험했다고」{END}
+
+[S05E935]  D0C#62
+JP: {name:05}「間合いがあまいっ!」{END}
+KO: {name:05}「거리 재기가 무르다!」{END}
+
+[S05E945]  D0C#63
+JP: {name:05}「あまいなっ!」{END}
+KO: {name:05}「무르군!」{END}
+
+[S05E950]  D0C#6E
+JP: {name:05}「あぶねぇ、あぶねぇ」{END}
+KO: {name:05}「위험했다, 위험했어」{END}
+
+[S05E95E]  D0C#6F
+JP: {name:05}「効かないってよ!!」{END}
+KO: {name:05}「안 통한다고!!」{END}
+
+[S05E96D]  D0C#73
+JP: {name:05}「ふう、あぶなかった」{END}
+KO: {name:05}「휴, 위험했어」{END}
+
+[S05E97B]  D0C#74
+JP: {name:05}「こんなもの!!」{END}
+KO: {name:05}「이까짓 것!!」{END}
+
+[S05E987]  D0C#7E
+JP: {name:05}「そんなもの!」{END}
+KO: {name:05}「그런 것쯤!」{END}
+
+[S05E992]  D0C#86
+JP: {name:05}「ねらいがあまいぜ!!」{END}
+KO: {name:05}「조준이 무르다고!!」{END}
+
+[S05E9A1]  D0C#87
+JP: {name:05}「効くかよ!」{END}
+KO: {name:05}「통할 것 같냐!」{END}
+
+[S05E9AC]  D0C#08
+JP: {name:05}「なにっ!?」{END}
+KO: {name:05}「뭣!?」{END}
+
+[S05E9B6]  D0C#17
+JP: {name:05}「えーっ!? なんで!?」{END}
+KO: {name:05}「에엣!? 어째서!?」{END}
+
+[S05E9C6]  D0C#1B
+JP: {name:05}「えっ!?」{END}
+KO: {name:05}「엣!?」{END}
+
+[S05E9CF]  D0C#21
+JP: {name:05}「なんじゃと!?{n}どういうこっちゃい!?」{END}
+KO: {name:05}「뭐라꼬!? 이기 우째 된{n}기고!?」{END}
+
+[S05E9E7]  D0C#27
+JP: {name:05}「なんだっ!? 反撃できない!!」{END}
+KO: {name:05}「뭐야!? 반격할 수{n}없어!!」{END}
+
+[S05E9FD]  D0C#30
+JP: {name:05}「なんだと!?」{END}
+KO: {name:05}「뭐라고!?」{END}
+
+[S05EA08]  D0C#36
+JP: {name:05}「な、なんだなんだ!?」{END}
+KO: {name:05}「뭐, 뭐야 뭐야!?」{END}
+
+[S05EA17]  D0C#3C
+JP: {name:05}「なんだっ!? み、身動きが{n}とれねえっ!」{END}
+KO: {name:05}「뭐야!? 오, 옴짝달싹 못{n}하겠어!」{END}
+
+[S05EA32]  D0C#4A
+JP: {name:05}「えっ!? なんで!?」{END}
+KO: {name:05}「엣!? 어째서!?」{END}
+
+[S05EA41]  D0C#55
+JP: {name:05}「わっ!? 反撃をふうじた?」{END}
+KO: {name:05}「왁!? 반격을 봉쇄했어?」{END}
+
+[S05EA55]  D0C#64
+JP: {name:05}「なんとーっ!?」{END}
+KO: {name:05}「뭐시라!?」{END}
+
+[S05EA61]  D0C#70
+JP: {name:05}「な、なんだあっ!?」{END}
+KO: {name:05}「뭐, 뭐야!?」{END}
+
+[S05EA6F]  D0C#75
+JP: {name:05}「反撃できない!?{n}なんで!?」{END}
+KO: {name:05}「반격할 수 없어!?{n}어째서!?」{END}
+
+[S05EA84]  D0C#7F
+JP: {name:05}「反撃できない!?」{END}
+KO: {name:05}「반격할 수 없어!?」{END}
+
+[S05EA93]  D0C#81
+JP: {name:05}「え!? なに!?」{END}
+KO: {name:05}「에!? 뭐야!?」{END}
+
+[S05EAA0]  D0C#88
+JP: {name:05}「こ、こいつ! 妙なわざを{n}つかいやがる!」{END}
+KO: {name:05}「이, 이 녀석! 묘한{n}기술을 쓰는군!」{END}
+
+[S05EABA]  D0C#07
+JP: {name:05}「弾切れ!?」{END}
+KO: {name:05}「탄약이 바닥났어!?」{END}
+
+[S05EAC6]  D0C#0F
+JP: {name:05}「くっ! 遠すぎるか!」{END}
+KO: {name:05}「큭! 너무 먼가!」{END}
+
+[S05EAD6]  D0C#16
+JP: {name:05}「ちっ! 弾切れかよ!!」{END}
+KO: {name:05}「쳇! 탄약이 바닥났냐!!」{END}
+
+[S05EAE8]  D0C#28
+JP: {name:05}「だめだ! とどかねえっ!」{END}
+KO: {name:05}「안 돼! 안 닿아!」{END}
+
+[S05EAF9]  D0C#29
+JP: {name:05}「しまった!! 弾切れか!」{END}
+KO: {name:05}「아차!! 탄약이{n}바닥났나!」{END}
+
+[S05EB0C]  D0C#3D
+JP: {name:05}「くそっ! とどかねえ!」{END}
+KO: {name:05}「젠장! 안 닿잖아!」{END}
+
+[S05EB1C]  D0C#3E
+JP: {name:05}「くっ! 弾切れか!」{END}
+KO: {name:05}「큭! 탄약이 바닥났나!」{END}
+
+[S05EB2C]  D0C#65
+JP: {name:05}「だめだわ、とどかない!」{END}
+KO: {name:05}「안 되겠어, 안 닿아!」{END}
+
+[S05EB3C]  D0C#76
+JP: {name:05}「だめだ、とどかない!」{END}
+KO: {name:05}「안 돼, 안 닿아!」{END}
+
+[S05EB4B]  D0C#80
+JP: {name:05}「遠すぎる!」{END}
+KO: {name:05}「너무 멀다!」{END}
+
+[S05EB56]  D0C#9B
+JP: {name:05}「くっ! とどかん!!」{END}
+KO: {name:05}「큭! 안 닿는다!!」{END}
+
+[S05EB65]  D0C#A5
+JP: {name:05}「え!? うそっ!? 弾切れ!?」{END}
+KO: {name:05}「에!? 거짓말!? 탄약이{n}바닥났어!?」{END}
+
+[S05EB7B]  D0C#AC
+JP: {name:05}「ちょっと!! どっから攻撃{n}してくんのよ! このヒキョーモノ!!」{END}
+KO: {name:05}「잠깐!! 어디서 공격하는{n}거야! 이 비겁한 놈!!」{END}
+
+[S05EBA2]  D0C#EF
+JP: {name:05}「これはしたり。 弾切れですか」{END}
+KO: {name:05}「이런 낭패가. 탄약이{n}바닥났습니까」{END}
+
+[S05EBB7]  D0C#C9
+JP: {name:05}「だ、だめだ、とどかないよ!」{END}
+KO: {name:05}「아, 안 돼, 안 닿아!」{END}
+
+[S05EBC9]  D0C#CA
+JP: {name:05}「ジーザス! エンプティ ネ!!」{END}
+KO: {name:05}「지저스! 엠프티 네!!」{END}
+
+[S05EBDD]  D0C#DC
+JP: {name:05}「OH! トドキマセン!」{END}
+KO: {name:05}「OH! 닿지 않스므니다!」{END}
+
+[S05EBED]  D0C#F0
+JP: {name:05}「少しばかり遠すぎるようで{n}ございますな」{END}
+KO: {name:05}「조금 지나치게 먼{n}듯하옵니다」{END}
+
+[S05EC07]  D0C#F8
+JP: {name:05}「ありゃ!? 弾切れ!?」{END}
+KO: {name:05}「어라!? 탄약이{n}바닥났어!?」{END}
+
+[S05EC19]  D0C#56
+JP: {name:05}「こ、このあたしが直撃をうけている!?」{END}
+KO: {name:05}「이, 이 내가 직격을{n}받고 있다고!?」{END}
+
+[S05EC32]  D0C#78
+JP: {name:05}「ちっ!! ドジった!!」{END}
+KO: {name:05}「쳇!! 실수했다!!」{END}
+
+[S05EC42]  D0C#26
+JP: {name:05}「ビームなど効かぬわ!!」{END}
+KO: {name:05}「빔 따위 통하지{n}않는다!!」{END}
+
+[S05EC53]  D0C#3F
+JP: {name:05}「ぐわっ!! し、しもたっ!!」{END}
+KO: {name:05}「크악!! 아, 아차{n}싶데이!!」{END}
+
+[S05EC66]  D0C#40
+JP: {name:05}「うわっ! あ、あかん! ヤバイで!」{END}
+KO: {name:05}「으악! 아, 안 된다!{n}위험하데이!」{END}
+
+[S05EC7C]  D0C#41
+JP: {name:05}「あいたっ!! やりおったな!」{END}
+KO: {name:05}「아얏!! 해 뿟나!」{END}
+
+[S05EC8F]  D0C#42
+JP: {name:05}「うっ! ま、まだや!{n}こんなもんじゃビクともせんで!!」{END}
+KO: {name:05}「윽! 아, 아직이다! 이{n}정도로는 끄떡도 안 한데이!!」{END}
+
+[S05ECAF]  D0C#43
+JP: {name:05}「へん! あたってたまるかい!」{END}
+KO: {name:05}「흥! 맞아 줄 것 같나!」{END}
+
+[S05ECC2]  D0C#44
+JP: {name:05}「な、なんやて!?」」{END}
+KO: {name:05}「뭐, 뭐라꼬!?」」{END}
+
+[S05ECD0]  D0C#5C
+JP: {name:05}「ちっ! 弾切れかいな」{END}
+KO: {name:05}「쳇! 탄약이 바닥났나」{END}
+
+[S05ECE1]  D0C#5D
+JP: {name:05}「あかん、とどかん!」{END}
+KO: {name:05}「안 된다, 안 닿는다!」{END}
+
+[S05ECEF]  D0C#4C
+JP: {name:05}「わあぁぁっ! こ、このままじゃ{n}危険タイ!!」{END}
+KO: {name:05}「와아악! 이, 이대로는{n}위험하데이!!」{END}
+
+[S05ED0C]  D0C#4D
+JP: {name:05}「ぐわっ! なんばしよっと!」{END}
+KO: {name:05}「크악! 뭐 하는 기고!」{END}
+
+[S05ED1E]  D0C#4E
+JP: {name:05}「あいたっ!」{END}
+KO: {name:05}「아얏!」{END}
+
+[S05ED28]  D0C#4F
+JP: {name:05}「あたりゃせんですタイ!」{END}
+KO: {name:05}「안 맞는데이!」{END}
+
+[S05ED38]  D0C#50
+JP: {name:05}「なんと!?」{END}
+KO: {name:05}「뭐라꼬!?」{END}
+
+[S05ED42]  D0C#71
+JP: {name:05}「くっ! 遠すぎるタイ!」{END}
+KO: {name:05}「큭! 너무 멀데이!」{END}
+
+[S05ED53]  D0C#66
+JP: {name:05}「しまった! 総員退避!!」{END}
+KO: {name:05}「아차! 총원 대피!!」{END}
+
+[S05ED68]  D0C#67
+JP: {name:05}「直撃か! 消火作業急げ!!」{END}
+KO: {name:05}「직격인가! 소화 작업{n}서둘러라!!」{END}
+
+[S05ED81]  D0C#68
+JP: {name:05}「左賊、弾幕うすいぞ!{n}なにやってんの!」{END}
+KO: {name:05}「좌현, 탄막이 얇다! 뭐{n}하는 거야!」{END}
+
+[S05ED9D]  D0C#69
+JP: {name:05}「くっ! まだもつ!!」{END}
+KO: {name:05}「큭! 아직 버틴다!!」{END}
+
+[S05EDAC]  D0C#6A
+JP: {name:05}「ふう、かわしたか」{END}
+KO: {name:05}「휴, 피했나」{END}
+
+[S05EDB9]  D0C#89
+JP: {name:05}「くっ! まだだ!{n}まだおちるな!」{END}
+KO: {name:05}「큭! 아직이다! 아직{n}떨어지지 마라!」{END}
+
+[S05EDCE]  D0C#8A
+JP: {name:05}「くっ! ひるむな!」{END}
+KO: {name:05}「큭! 물러서지 마라!」{END}
+
+[S05EDDC]  D0C#8B
+JP: {name:05}「よし、かわした!」{END}
+KO: {name:05}「좋아, 피했다!」{END}
+
+[S05EDE9]  D0C#8C
+JP: {name:05}「くっ! やられたっ!」{END}
+KO: {name:05}「큭! 당했다!」{END}
+
+[S05EDF8]  D0C#8D
+JP: {name:05}「くっ! まだいける!」{END}
+KO: {name:05}「큭! 아직 할 수 있어!」{END}
+
+[S05EE07]  D0C#8E
+JP: {name:05}「あたった!? でも!」{END}
+KO: {name:05}「맞았어!? 하지만!」{END}
+
+[S05EE16]  D0C#8F
+JP: {name:05}「しまった! 脱出を!」{END}
+KO: {name:05}「아차! 탈출을!」{END}
+
+[S05EE27]  D0C#90
+JP: {name:05}「くっ! や、やられる!!」{END}
+KO: {name:05}「큭! 다, 당한다!!」{END}
+
+[S05EE38]  D0C#91
+JP: {name:05}「まだまだ! こんなもので!」{END}
+KO: {name:05}「아직이다! 이 정도로!」{END}
+
+[S05EE4A]  D0C#92
+JP: {name:05}「この程度のダメージ!!」{END}
+KO: {name:05}「이 정도 대미지쯤!!」{END}
+
+[S05EE5C]  D0C#93
+JP: {name:05}「まだ! まだいける!」{END}
+KO: {name:05}「아직! 아직 할 수{n}있어!」{END}
+
+[S05EE6B]  D0C#94
+JP: {name:05}「こんなので!」{END}
+KO: {name:05}「이런 걸로!」{END}
+
+[S05EE76]  D0C#95
+JP: {name:05}「あぶないっ!」{END}
+KO: {name:05}「위험해!」{END}
+
+[S05EE81]  D0C#96
+JP: {name:05}「ちいっ!」{END}
+KO: {name:05}「치잇!」{END}
+
+[S05EE8A]  D0C#97
+JP: {name:05}「まだだ! まだ終わらんよ!」{END}
+KO: {name:05}「아직이다! 아직 끝나지{n}않았어!」{END}
+
+[S05EE9D]  D0C#98
+JP: {name:05}「やる! しかし!!」{END}
+KO: {name:05}「제법이군! 하지만!!」{END}
+
+[S05EEAB]  D0C#99
+JP: {name:05}「この程度で!」{END}
+KO: {name:05}「이 정도로!」{END}
+
+[S05EEB8]  D0C#9A
+JP: {name:05}「あまいなっ!」{END}
+KO: {name:05}「무르군!」{END}
+
+[S05EEC3]  D0C#9C
+JP: {name:05}「させるか!」{END}
+KO: {name:05}「그렇게 둘 것 같으냐!」{END}
+
+[S05EECD]  D0C#9D
+JP: {name:05}「いかん! やられる!?」{END}
+KO: {name:05}「안 돼! 당하는 건가!?」{END}
+
+[S05EEDD]  D0C#9E
+JP: {name:05}「きゃあっ!! やられちゃった!」{END}
+KO: {name:05}「꺄악!! 당해 버렸어!」{END}
+
+[S05EEF1]  D0C#9F
+JP: {name:05}「きゃっ! も、もつの!?」{END}
+KO: {name:05}「꺅! 버, 버틸 수{n}있을까!?」{END}
+
+[S05EF02]  D0C#A0
+JP: {name:05}「きゃっ! やってくれんじゃないのさ!」{END}
+KO: {name:05}「꺅! 제법 하잖아!」{END}
+
+[S05EF19]  D0C#A1
+JP: {name:05}「まだまだ! あまいんだよ!」{END}
+KO: {name:05}「아직 멀었어!{n}무르다고!」{END}
+
+[S05EF2B]  D0C#A2
+JP: {name:05}「あたんないよ!!」{END}
+KO: {name:05}「안 맞거든!!」{END}
+
+[S05EF38]  D0C#A3
+JP: {name:05}「ムダだっていってんじゃん!」{END}
+KO: {name:05}「소용없다고 했잖아!」{END}
+
+[S05EF4A]  D0C#A4
+JP: {name:05}「え!? なんで動けないのよ!?」{END}
+KO: {name:05}「에!? 왜 못 움직이는{n}거야!?」{END}
+
+[S05EF5F]  D0C#A6
+JP: {name:05}「きゃあっ! や、やられた!」{END}
+KO: {name:05}「꺄악! 다, 당했어!」{END}
+
+[S05EF71]  D0C#A7
+JP: {name:05}「くっ! このままじゃ・・・」{END}
+KO: {name:05}「큭! 이대로는・・・」{END}
+
+[S05EF83]  D0C#A8
+JP: {name:05}「きゃっ! やったわねえっ!」{END}
+KO: {name:05}「꺅! 해 봤겠다!」{END}
+
+[S05EF95]  D0C#A9
+JP: {name:05}「まだまだっ!!」{END}
+KO: {name:05}「아직 멀었어!!」{END}
+
+[S05EFA1]  D0C#AA
+JP: {name:05}「あたるもんですか!」{END}
+KO: {name:05}「맞을까 보냐!」{END}
+
+[S05EFAF]  D0C#AB
+JP: {name:05}「ムダよ!!」{END}
+KO: {name:05}「소용없어!!」{END}
+
+[S05EFB9]  D0C#AD
+JP: {name:05}「うわあああっ! だ、だから{n}イヤだったんだ!」{END}
+KO: {name:05}「으아아악! 그, 그러니까{n}싫다고 했잖아!」{END}
+
+[S05EFD4]  D0C#AE
+JP: {name:05}「うわっ! やったなっ!」{END}
+KO: {name:05}「으악! 해 봤겠다!」{END}
+
+[S05EFE4]  D0C#AF
+JP: {name:05}「ふーっ、かんいっぱつ・・・」{END}
+KO: {name:05}「휴우, 간발의{n}차였어・・・」{END}
+
+[S05EFF6]  D0C#B0
+JP: {name:05}「うわっ! ・・・あ、{n}なんともないや」{END}
+KO: {name:05}「으악! ・・・어,{n}아무렇지도 않네」{END}
+
+[S05F00D]  D0C#B1
+JP: {name:05}「えーっ!? なんで!?」{END}
+KO: {name:05}「에엣!? 어째서!?」{END}
+
+[S05F01D]  D0C#B2
+JP: {name:05}「くそっ!! やられちまったい!」{END}
+KO: {name:05}「젠장!! 당해 버렸다!」{END}
+
+[S05F031]  D0C#B3
+JP: {name:05}「うわっ!! や、やべぇ!」{END}
+KO: {name:05}「으악!! 위, 위험해!」{END}
+
+[S05F042]  D0C#B4
+JP: {name:05}「やったな、このやろう!」{END}
+KO: {name:05}「해 봤겠다, 이 자식!」{END}
+
+[S05F052]  D0C#B5
+JP: {name:05}「へーき、へーき!」{END}
+KO: {name:05}「괜찮아, 괜찮아!」{END}
+
+[S05F05F]  D0C#B6
+JP: {name:05}「やられたあっ!!」{END}
+KO: {name:05}「당했다!!」{END}
+
+[S05F06C]  D0C#B7
+JP: {name:05}「うわっ!! ど、どうしよう!?」{END}
+KO: {name:05}「으악!! 어,{n}어떡하지!?」{END}
+
+[S05F080]  D0C#B8
+JP: {name:05}「くっ! やるじゃん!」{END}
+KO: {name:05}「큭! 제법인데!」{END}
+
+[S05F08F]  D0C#B9
+JP: {name:05}「くっ! も、もたない!?」{END}
+KO: {name:05}「큭! 못, 못 버티나!?」{END}
+
+[S05F0A0]  D0C#BA
+JP: {name:05}「きゃあっ!! も、もうダメ!」{END}
+KO: {name:05}「꺄악!! 이, 이젠 안{n}돼!」{END}
+
+[S05F0B3]  D0C#BB
+JP: {name:05}「えっ!? どうして!?{n}どうして反撃できないの!?」{END}
+KO: {name:05}「엣!? 어째서!? 어째서{n}반격을 못 하는 거야!?」{END}
+
+[S05F0D3]  D0C#BC
+JP: {name:05}「どわぁぁぁっ!!{n}やられちまったい!」{END}
+KO: {name:05}「으아아악!! 당해{n}버렸다!」{END}
+
+[S05F0EA]  D0C#BD
+JP: {name:05}「あいたたっ!! こ、こいつは{n}やばいぜ!!」{END}
+KO: {name:05}「아야야!! 이, 이건{n}위험한데!!」{END}
+
+[S05F104]  D0C#BE
+JP: {name:05}「あいてっ! よくも{n}やりやがったなっ!!」{END}
+KO: {name:05}「아얏! 잘도 해{n}줬겠다!!」{END}
+
+[S05F11D]  D0C#BF
+JP: {name:05}「へへん! 効いてないぜ!」{END}
+KO: {name:05}「헤헹! 하나도 안{n}통했다고!」{END}
+
+[S05F12F]  D0C#C0
+JP: {name:05}「うおっ!! しまった!!」{END}
+KO: {name:05}「우왓!! 아차!!」{END}
+
+[S05F140]  D0C#C1
+JP: {name:05}「くそっ! こうダメージを{n}受けては!」{END}
+KO: {name:05}「젠장! 이렇게 대미지를{n}입어서는!」{END}
+
+[S05F158]  D0C#C2
+JP: {name:05}「くっ!! だが、この程度なら{n}まだいける!」{END}
+KO: {name:05}「큭!! 하지만 이{n}정도라면 아직 할 수 있다!」{END}
+
+[S05F174]  D0C#C3
+JP: {name:05}「うっ!!」{END}
+KO: {name:05}「윽!!」{END}
+
+[S05F17D]  D0C#C4
+JP: {name:05}「おおっと!!」{END}
+KO: {name:05}「어이쿠!!」{END}
+
+[S05F188]  D0C#C5
+JP: {name:05}「くっ!! まだやられる{n}わけには!!」{END}
+KO: {name:05}「큭!! 아직 당할 수는{n}없어!!」{END}
+
+[S05F19F]  D0C#C6
+JP: {name:05}「うっ!! ま、まだ{n}だいじょうぶ!」{END}
+KO: {name:05}「윽!! 아, 아직{n}괜찮아!」{END}
+
+[S05F1B5]  D0C#C7
+JP: {name:05}「あたってたまるものですか!」{END}
+KO: {name:05}「맞을 줄 알고!」{END}
+
+[S05F1C7]  D0C#C8
+JP: {name:05}「うっ!? 身動きがとれない!?」{END}
+KO: {name:05}「윽!? 옴짝달싹 못{n}하겠어!?」{END}
+
+[S05F1DD]  D0C#CB
+JP: {name:05}「てめえ! やりゃあがったな!!」{END}
+KO: {name:05}「이 자식! 해 봤겠다!!」{END}
+
+[S05F1F1]  D0C#CC
+JP: {name:05}「ヘン、その程度かよ!」{END}
+KO: {name:05}「흥, 그 정도냐!」{END}
+
+[S05F202]  D0C#CD
+JP: {name:05}「へへーん! はぁずれ!」{END}
+KO: {name:05}「헤헹! 빗나갔지롱!」{END}
+
+[S05F212]  D0C#CE
+JP: {name:05}「くそっ! 動けねえ!!」{END}
+KO: {name:05}「젠장! 못 움직이겠어!!」{END}
+
+[S05F223]  D0C#CF
+JP: {name:05}「OH! サノバビッチ!!」{END}
+KO: {name:05}「OH! 썬 오브 비치!!」{END}
+
+[S05F234]  D0C#D0
+JP: {name:05}「ジーザス!!」{END}
+KO: {name:05}「지저스!!」{END}
+
+[S05F23F]  D0C#D1
+JP: {name:05}「SHIT!!」{END}
+KO: {name:05}「SHIT!!」{END}
+
+[S05F24A]  D0C#D2
+JP: {name:05}「OUCH!!」{END}
+KO: {name:05}「OUCH!!」{END}
+
+[S05F255]  D0C#D3
+JP: {name:05}「HAHAHA! ヘタクソね!」{END}
+KO: {name:05}「HAHAHA! 서투르네요!」{END}
+
+[S05F268]  D0C#D4
+JP: {name:05}「WHAT!?」{END}
+KO: {name:05}「WHAT!?」{END}
+
+[S05F273]  D0C#D5
+JP: {name:05}「ちっ! ドジったぜ!」{END}
+KO: {name:05}「쳇! 실수했다!」{END}
+
+[S05F282]  D0C#D6
+JP: {name:05}「くっ!! ヤバイな・・・」{END}
+KO: {name:05}「큭!! 위험한데・・・」{END}
+
+[S05F293]  D0C#D7
+JP: {name:05}「きゃああっ!! あきらぁっ!!」{END}
+KO: {name:05}「꺄아악!! 아키라!!」{END}
+
+[S05F2A7]  D0C#D8
+JP: {name:05}「ダメ、やられちゃうっ!!」{END}
+KO: {name:05}「안 돼, 당하겠어!!」{END}
+
+[S05F2B8]  D0C#D9
+JP: {name:05}「いったあぁぁぁい!」{END}
+KO: {name:05}「아파아아아!」{END}
+
+[S05F2C6]  D0C#DA
+JP: {name:05}「ベーだ! あたんないわよ!」{END}
+KO: {name:05}「메롱! 안 맞거든!」{END}
+
+[S05F2D8]  D0C#DB
+JP: {name:05}「なんで!? なんで{n}動けないのよっ!」{END}
+KO: {name:05}「왜!? 왜 못 움직이는{n}거야!」{END}
+
+[S05F2F0]  D0C#DD
+JP: {name:05}「くっ! これまでか!」{END}
+KO: {name:05}「큭! 여기까지인가!」{END}
+
+[S05F2FF]  D0C#DE
+JP: {name:05}「うっ! やられる!?」{END}
+KO: {name:05}「윽! 당하는 건가!?」{END}
+
+[S05F30E]  D0C#DF
+JP: {name:05}「!! まだ落ちるわけには!」{END}
+KO: {name:05}「!! 아직 떨어질 수는{n}없어!」{END}
+
+[S05F321]  D0C#E0
+JP: {name:05}「まだ!! かすりキズ!」{END}
+KO: {name:05}「아직!! 스친 상처다!」{END}
+
+[S05F331]  D0C#E1
+JP: {name:05}「あまいっ!」{END}
+KO: {name:05}「무르다!」{END}
+
+[S05F33B]  D0C#E2 D0C#E3 D0C#E4 D0C#E5
+JP: {name:05}「くっ!! まだっ!!」{END}
+KO: {name:05}「큭!! 아직!!」{END}
+
+[S05F34A]  D0C#FA
+JP: {name:05}「ぬ、ぬおおおおおっ!!」{END}
+KO: {name:05}「으, 으오오오오오!!」{END}
+
+[S05F35A]  D0C#FB
+JP: {name:05}「ぬうっ!! まだだ! まだ{n}やられはせん!!」」{END}
+KO: {name:05}「으윽!! 아직이다! 아직{n}당하지는 않는다!!」」{END}
+
+[S05F376]  D0C#FC
+JP: {name:05}「おのれっ! よくも!!」{END}
+KO: {name:05}「이놈! 감히!!」{END}
+
+[S05F386]  D0C#FD
+JP: {name:05}「このわたしにキズをつけるとは・・・{n}ゆるさん!」{END}
+KO: {name:05}「감히 나에게 상처를{n}내다니・・・용서 못 한다!」{END}
+
+[S05F3A2]  D0C#FE
+JP: {name:05}「その程度か!」{END}
+KO: {name:05}「그 정도냐!」{END}

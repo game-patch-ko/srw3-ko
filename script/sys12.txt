@@ -1,0 +1,719 @@
+# 제3차 슈퍼로봇대전 번역 스크립트  (sys12)
+# - 'KO:' 줄에 번역을 씁니다. 비워 두면 원문이 그대로 들어갑니다.
+# - 태그는 지우거나 바꾸지 마세요(위치 이동은 가능):
+#     {n} 줄바꿈  {w} 키 입력 대기  {face:xx} 얼굴  {name:xx} 이름 삽입  {END} 끝
+#     {if:..} {goto:..} {rand:..} {F8:..} 은 분기(라벨 포함) — 반드시 유지
+# - 한글은 KS X 1001 완성형 2,350자만 쓸 수 있습니다(예: 똠, 뷁 불가).
+# - [라벨] 옆 '->' 는 이 조각이 {END} 없이 다음 조각으로 이어진다는 뜻입니다.
+
+[S0360D3]  N12#00
+JP: {END}
+KO: 
+
+[S0360D4]  N12#01
+JP: コンバトラーV{END}
+KO: 컴배틀러V{END}
+
+[S0360DC]  N12#02
+JP: バトルジェット{END}
+KO: 배틀제트{END}
+
+[S0360E4]  N12#03
+JP: バトルクラッシャー{END}
+KO: 배틀크래셔{END}
+
+[S0360EE]  N12#04
+JP: バトルタンク{END}
+KO: 배틀탱크{END}
+
+[S0360F5]  N12#05
+JP: バトルマリン{END}
+KO: 배틀마린{END}
+
+[S0360FC]  N12#06
+JP: バトルクラフト{END}
+KO: 배틀크래프트{END}
+
+[S036104]  N12#07
+JP: プロトゲッターロボ{END}
+KO: 프로토게타로보{END}
+
+[S03610E]  N12#08
+JP: プロトゲッター1{END}
+KO: 프로토게타1{END}
+
+[S036117]  N12#09
+JP: プロトゲッター2{END}
+KO: 프로토게타2{END}
+
+[S036120]  N12#0A
+JP: プロトゲッター3{END}
+KO: 프로토게타3{END}
+
+[S036129]  N12#0B N12#0C
+JP: ジャムル・フィン{END}
+KO: 자물・핀{END}
+
+[S036132]  N12#0D
+JP: ザク{END}
+KO: 자쿠{END}
+
+[S036135]  N12#0E
+JP: ゲッターロボ{END}
+KO: 게타로보{END}
+
+[S03613C]  N12#0F
+JP: ゲッター1{END}
+KO: 게타1{END}
+
+[S036142]  N12#10
+JP: ゲッター2{END}
+KO: 게타2{END}
+
+[S036148]  N12#11
+JP: ゲッター3{END}
+KO: 게타3{END}
+
+[S03614E]  N12#12 N12#13
+JP: ジオング{END}
+KO: 지옹{END}
+
+[S036153]  N12#14
+JP: ゼンⅡ{END}
+KO: 젠Ⅱ{END}
+
+[S036157]  N12#15
+JP: ゲッターロボG{END}
+KO: 게타로보G{END}
+
+[S03615F]  N12#16
+JP: ゲッタードラゴン{END}
+KO: 게타드래곤{END}
+
+[S036168]  N12#17
+JP: ゲッターライガー{END}
+KO: 게타라이거{END}
+
+[S036171]  N12#18
+JP: ゲッターポセイドン{END}
+KO: 게타포세이돈{END}
+
+[S03617B]  N12#19
+JP: メカ鉄甲鬼{END}
+KO: 메카 텟코키{END}
+
+[S036184]  N12#1A
+JP: メカ胡蝶鬼{END}
+KO: 메카 코쵸키{END}
+
+[S03618D]  N12#1B
+JP: ヴァルシオン{END}
+KO: 발시온{END}
+
+[S036194]  N12#1C
+JP: グレンダイザー{END}
+KO: 그렌다이저{END}
+
+[S03619C]  N12#1D
+JP: スペイザー{END}
+KO: 스페이저{END}
+
+[S0361A2]  N12#1E
+JP: ダブルスペイザー{END}
+KO: 더블스페이저{END}
+
+[S0361AB]  N12#1F
+JP: マリンスペイザー{END}
+KO: 마린스페이저{END}
+
+[S0361B4]  N12#20
+JP: ドリルスペイザー{END}
+KO: 드릴스페이저{END}
+
+[S0361BD]  N12#21 N12#22 N12#23
+JP: グレンダイザー{END}
+KO: 그렌다이저{END}
+
+[S0361C5]  N12#24 N12#25
+JP: マジンガーZ{END}
+KO: 마징가Z{END}
+
+[S0361CC]  N12#26
+JP: グレートマジンガー{END}
+KO: 그레이트마징가{END}
+
+[S0361D6]  N12#27
+JP: ガンダム{END}
+KO: 건담{END}
+
+[S0361DB]  N12#28
+JP: νガンダム{END}
+KO: ν건담{END}
+
+[S0361E1]  N12#29
+JP: Zガンダム{END}
+KO: Z건담{END}
+
+[S0361E7]  N12#2A
+JP: ウェイブライダー{END}
+KO: 웨이브라이더{END}
+
+[S0361F0]  N12#2B
+JP: ZZガンダム{END}
+KO: ZZ건담{END}
+
+[S0361F7]  N12#2C
+JP: Gフォートレス{END}
+KO: G포트리스{END}
+
+[S0361FF]  N12#2D
+JP: Fー91{END}
+KO: 
+
+[S036204]  N12#2E
+JP: ライディーン{END}
+KO: 라이딘{END}
+
+[S03620B]  N12#2F
+JP: ゴッドバード{END}
+KO: 갓버드{END}
+
+[S036212]  N12#30
+JP: ダイターン3{END}
+KO: 다이탄3{END}
+
+[S036219]  N12#31
+JP: ダイファイター{END}
+KO: 다이파이터{END}
+
+[S036221]  N12#32
+JP: ダイタンク{END}
+KO: 다이탱크{END}
+
+[S036227]  N12#33
+JP: サイバスター{END}
+KO: 사이버스터{END}
+
+[S03622E]  N12#34
+JP: サイバード{END}
+KO: 사이버드{END}
+
+[S036234]  N12#35
+JP: グランゾン{END}
+KO: 그란존{END}
+
+[S03623A]  N12#36
+JP: ヴァルシオーネ{END}
+KO: 발시오네{END}
+
+[S036242]  N12#37
+JP: テキサスマック{END}
+KO: 텍사스맥{END}
+
+[S03624A]  N12#38
+JP: ゲッターQ{END}
+KO: 게타Q{END}
+
+[S036250]  N12#39
+JP: ボスボロット{END}
+KO: 보스보롯{END}
+
+[S036257]  N12#3A
+JP: アフロダイA{END}
+KO: 아프로다이A{END}
+
+[S03625E]  N12#3B
+JP: ダイアナンA{END}
+KO: 다이아난A{END}
+
+[S036265]  N12#3C
+JP: ビューナスA{END}
+KO: 비너스A{END}
+
+[S03626C]  N12#3D
+JP: ブルーガー{END}
+KO: 블루거{END}
+
+[S036272]  N12#3E
+JP: アレックス{END}
+KO: 알렉스{END}
+
+[S036278]  N12#3F
+JP: ガンダムmkⅡ{END}
+KO: 건담mkⅡ{END}
+
+[S036280]  N12#40
+JP: スーパーガンダム{END}
+KO: 슈퍼건담{END}
+
+[S036289]  N12#41
+JP: 百式{END}
+KO: 백식{END}
+
+[S03628E]  N12#42
+JP: GPー01{END}
+KO: 
+
+[S036294]  N12#43
+JP: GPー01Fb{END}
+KO: 
+
+[S03629C]  N12#44
+JP: ガンキャノン{END}
+KO: 건캐논{END}
+
+[S0362A3]  N12#45 N12#46
+JP: メタス{END}
+KO: 메타스{END}
+
+[S0362A7]  N12#47
+JP: リックディアス{END}
+KO: 릭디아스{END}
+
+[S0362AF]  N12#48
+JP: ネモ{END}
+KO: 네모{END}
+
+[S0362B2]  N12#49
+JP: ジェガン{END}
+KO: 제간{END}
+
+[S0362B7]  N12#4A N12#4B
+JP: リガズィ{END}
+KO: 리가지{END}
+
+[S0362BC]  N12#4C
+JP: GPー03オーキス{END}
+KO: GPー03오키스{END}
+
+[S0362C6]  N12#4D
+JP: GPー03ステイメン{END}
+KO: GPー03스테이멘{END}
+
+[S0362D1]  N12#4E N12#4F
+JP: ザク{END}
+KO: 자쿠{END}
+
+[S0362D4]  N12#50
+JP: グフ{END}
+KO: 구프{END}
+
+[S0362D7]  N12#51
+JP: ドム{END}
+KO: 돔{END}
+
+[S0362DA]  N12#52
+JP: ズゴックE{END}
+KO: 즈곡E{END}
+
+[S0362E0]  N12#53
+JP: ハイゴッグ{END}
+KO: 하이곡{END}
+
+[S0362E6]  N12#54
+JP: ギャン{END}
+KO: 갼{END}
+
+[S0362EA]  N12#55
+JP: ビグザム{END}
+KO: 비그잠{END}
+
+[S0362EF]  N12#56
+JP: ゲルググ{END}
+KO: 겔구그{END}
+
+[S0362F4]  N12#57
+JP: ゲルググJ{END}
+KO: 겔구그J{END}
+
+[S0362FA]  N12#58
+JP: ゲルググM{END}
+KO: 겔구그M{END}
+
+[S036300]  N12#59
+JP: ゲルググM{END}
+KO: 겔구그M{END}
+
+[S036306]  N12#5A
+JP: ゲルググ{END}
+KO: 겔구그{END}
+
+[S03630B]  N12#5B
+JP: エルメス{END}
+KO: 엘메스{END}
+
+[S036310]  N12#5C
+JP: ジャラガ{END}
+KO: 자라가{END}
+
+[S036315]  N12#5D
+JP: マラサイ{END}
+KO: 마라사이{END}
+
+[S03631A]  N12#5E N12#5F
+JP: アッシマー{END}
+KO: 아시마{END}
+
+[S036320]  N12#60
+JP: バイアラン{END}
+KO: 바이아란{END}
+
+[S036326]  N12#61 N12#62
+JP: ギャプラン{END}
+KO: 갸프란{END}
+
+[S03632C]  N12#63 N12#64
+JP: ガブスレイ{END}
+KO: 가브슬레이{END}
+
+[S036332]  N12#65 N12#66
+JP: ハンブラビ{END}
+KO: 함브라비{END}
+
+[S036338]  N12#67 N12#68
+JP: メッサーラ{END}
+KO: 멧사라{END}
+
+[S03633E]  N12#69
+JP: パラス・アテネ{END}
+KO: 팔라스・아테네{END}
+
+[S036346]  N12#6A N12#6B
+JP: バウンド・ドッグ{END}
+KO: 바운드・독{END}
+
+[S03634F]  N12#6C
+JP: ジ・O{END}
+KO: 지・O{END}
+
+[S036353]  N12#6D
+JP: キュベレイ{END}
+KO: 큐베레이{END}
+
+[S036359]  N12#6E
+JP: キュベレイmkⅡ{END}
+KO: 큐베레이mkⅡ{END}
+
+[S036362]  N12#6F N12#70
+JP: サイコガンダム{END}
+KO: 사이코건담{END}
+
+[S03636A]  N12#71 N12#72
+JP: サイコガンダムmkⅡ{END}
+KO: 사이코건담mkⅡ{END}
+
+[S036375]  N12#73
+JP: GM{END}
+KO: 짐{END}
+
+[S036378]  N12#74
+JP: ズサ{END}
+KO: 즈사{END}
+
+[S03637B]  N12#75
+JP: ドライセン{END}
+KO: 드라이센{END}
+
+[S036381]  N12#76
+JP: カプール{END}
+KO: 카풀{END}
+
+[S036386]  N12#77 N12#78 N12#79 N12#7A
+JP: バウ{END}
+KO: 바우{END}
+
+[S036389]  N12#7B
+JP: ザクⅢ{END}
+KO: 자쿠Ⅲ{END}
+
+[S03638D]  N12#7C
+JP: ザクⅢ改{END}
+KO: 자쿠Ⅲ개{END}
+
+[S036393]  N12#7D
+JP: ドーベンウルフ{END}
+KO: 도벤울프{END}
+
+[S03639B]  N12#7E
+JP: ゲーマルク{END}
+KO: 게마르크{END}
+
+[S0363A1]  N12#7F
+JP: クイン・マンサ{END}
+KO: 퀸・만사{END}
+
+[S0363A9]  N12#80 N12#81
+JP: ギラ・ドーガ{END}
+KO: 기라・도가{END}
+
+[S0363B0]  N12#82 N12#83 N12#84
+JP: ヤクト・ドーガ{END}
+KO: 약트・도가{END}
+
+[S0363B8]  N12#85
+JP: サザビー{END}
+KO: 사자비{END}
+
+[S0363BD]  N12#86
+JP: α・アジール{END}
+KO: α・아질{END}
+
+[S0363C4]  N12#87
+JP: ドラッツェ{END}
+KO: 드라체{END}
+
+[S0363CA]  N12#88
+JP: ノイエ・ジール{END}
+KO: 노이에・질{END}
+
+[S0363D2]  N12#89
+JP: ガーベラ・テトラ{END}
+KO: 거베라・테트라{END}
+
+[S0363DB]  N12#8A
+JP: ケンプファー{END}
+KO: 켐퍼{END}
+
+[S0363E2]  N12#8B
+JP: ダギ・イルス{END}
+KO: 다기・이루스{END}
+
+[S0363E9]  N12#8C
+JP: ベルガ・ギロス{END}
+KO: 베르가・기로스{END}
+
+[S0363F1]  N12#8D
+JP: ビギナ・ギナ{END}
+KO: 비기나・기나{END}
+
+[S0363F8]  N12#8E
+JP: ラフレシア{END}
+KO: 라플레시아{END}
+
+[S0363FE]  N12#8F
+JP: GPー02{END}
+KO: 
+
+[S036404]  N12#90
+JP: ガラダK7{END}
+KO: 가라다K7{END}
+
+[S03640A]  N12#91
+JP: ダブラスM2{END}
+KO: 다브라스M2{END}
+
+[S036411]  N12#92
+JP: ラインX1{END}
+KO: 라인X1{END}
+
+[S036417]  N12#93
+JP: ジェノバM9{END}
+KO: 제노바M9{END}
+
+[S03641E]  N12#94
+JP: スパルタンK5{END}
+KO: 스파르탄K5{END}
+
+[S036426]  N12#95
+JP: ミネルバX{END}
+KO: 미네르바X{END}
+
+[S03642C]  N12#96
+JP: グロッサムX2{END}
+KO: 글로삼X2{END}
+
+[S036434]  N12#97
+JP: アブドラU6{END}
+KO: 아브도라U6{END}
+
+[S03643B]  N12#98
+JP: 暗黒大将軍{END}
+KO: 암흑대장군{END}
+
+[S036446]  N12#99
+JP: ザイ{END}
+KO: 자이{END}
+
+[S036449]  N12#9A
+JP: ズー{END}
+KO: 주{END}
+
+[S03644C]  N12#9B
+JP: バド{END}
+KO: 바드{END}
+
+[S03644F]  N12#9C
+JP: サキ{END}
+KO: 사키{END}
+
+[S036452]  N12#9D
+JP: シグ{END}
+KO: 시그{END}
+
+[S036455]  N12#9E
+JP: ダイ{END}
+KO: 다이{END}
+
+[S036458]  N12#9F
+JP: ドローメ{END}
+KO: 드로메{END}
+
+[S03645D]  N12#A0
+JP: ガンテ{END}
+KO: 간테{END}
+
+[S036461]  N12#A1
+JP: ギルディーン{END}
+KO: 길딘{END}
+
+[S036468]  N12#A2
+JP: メカガンテ{END}
+KO: 메카간테{END}
+
+[S03646E]  N12#A3
+JP: 巨大シャーキン{END}
+KO: 거대 샤킨{END}
+
+[S036478]  N12#A4
+JP: ビッグガルーダ{END}
+KO: 빅 가루다{END}
+
+[S036480]  N12#A5
+JP: ディジェSEーR{END}
+KO: 디제SEーR{END}
+
+[S036489]  N12#A6
+JP: ギルギル{END}
+KO: 길길{END}
+
+[S03648E]  N12#A7
+JP: ズメズメ{END}
+KO: 즈메즈메{END}
+
+[S036493]  N12#A8
+JP: ゴスゴス{END}
+KO: 고스고스{END}
+
+[S036498]  N12#A9
+JP: ドラゴノザウルス{END}
+KO: 드라고노사우루스{END}
+
+[S0364A1]  N12#AA
+JP: ピグドロン{END}
+KO: 피그드론{END}
+
+[S0364A7]  N12#AB
+JP: トロスD7{END}
+KO: 트로스D7{END}
+
+[S0364AD]  N12#AC
+JP: グラトニオス{END}
+KO: 그라토니오스{END}
+
+[S0364B4]  N12#AD
+JP: マグマ獣ガルムス{END}
+KO: 마그마수 가르무스{END}
+
+[S0364BE]  N12#AE
+JP: ブード{END}
+KO: 부드{END}
+
+[S0364C2]  N12#AF
+JP: グール{END}
+KO: 구울{END}
+
+[S0364C6]  N12#B0
+JP: ホワイトベース{END}
+KO: 화이트베이스{END}
+
+[S0364CE]  N12#B1
+JP: アーガマ{END}
+KO: 아가마{END}
+
+[S0364D3]  N12#B2
+JP: ネェル・アーガマ{END}
+KO: 네엘・아가마{END}
+
+[S0364DC]  N12#B3
+JP: ラー・カイラム{END}
+KO: 라・카일럼{END}
+
+[S0364E4]  N12#B4
+JP: 化石獣バストドン{END}
+KO: 화석수 바스토돈{END}
+
+[S0364F0]  N12#B5
+JP: ドゴス・ギア{END}
+KO: 도고스・기어{END}
+
+[S0364F7]  N12#B6
+JP: ドロス{END}
+KO: 드로스{END}
+
+[S0364FB]  N12#B7
+JP: ムサイ{END}
+KO: 무사이{END}
+
+[S0364FF]  N12#B8
+JP: ザクレロ{END}
+KO: 자크레로{END}
+
+[S036504]  N12#B9
+JP: ミデア{END}
+KO: 미디아{END}
+
+[S036508]  N12#BA N12#BB N12#BC
+JP: ギルギルガン{END}
+KO: 길길건{END}
+
+[S03650F]  N12#BD
+JP: メカギルギルガン{END}
+KO: 메카길길건{END}
+
+[S036518]  N12#BE
+JP: ドルーキン{END}
+KO: 드루킨{END}
+
+[S03651E]  N12#BF
+JP: グレイターキン{END}
+KO: 그레이터킨{END}
+
+[S036526]  N12#C0
+JP: ガルガウ{END}
+KO: 가르가우{END}
+
+[S03652B]  N12#C1
+JP: シルベルヴィント{END}
+KO: 실베르빈트{END}
+
+[S036534]  N12#C2
+JP: ディカステス{END}
+KO: 디카스테스{END}
+
+[S03653B]  N12#C3
+JP: ネオ・グランゾン{END}
+KO: 네오・그란존{END}
+
+[S036544]  N12#C4
+JP: Gディフェンサー{END}
+KO: G디펜서{END}
+
+[S03654D]  N12#C5
+JP: ガルガンチュワ{END}
+KO: 가르간추아{END}
+
+[S036555]  N12#C6
+JP: パンタグリュエル{END}
+KO: 판타그뤼엘{END}
+
+[S03655E]  N12#C7 N12#C8
+JP: ガザC{END}
+KO: 가자C{END}
+
+[S036562]  N12#C9
+JP: ヴァルシオン改{END}
+KO: 발시온 개{END}
+
+[S03656B]  N12#CA N12#CB N12#CC N12#CD
+JP: ーーーー{END}
+KO: 

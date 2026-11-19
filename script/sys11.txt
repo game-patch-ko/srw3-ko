@@ -1,0 +1,759 @@
+# 제3차 슈퍼로봇대전 번역 스크립트  (sys11)
+# - 'KO:' 줄에 번역을 씁니다. 비워 두면 원문이 그대로 들어갑니다.
+# - 태그는 지우거나 바꾸지 마세요(위치 이동은 가능):
+#     {n} 줄바꿈  {w} 키 입력 대기  {face:xx} 얼굴  {name:xx} 이름 삽입  {END} 끝
+#     {if:..} {goto:..} {rand:..} {F8:..} 은 분기(라벨 포함) — 반드시 유지
+# - 한글은 KS X 1001 완성형 2,350자만 쓸 수 있습니다(예: 똠, 뷁 불가).
+# - [라벨] 옆 '->' 는 이 조각이 {END} 없이 다음 조각으로 이어진다는 뜻입니다.
+
+[S035BCE]  N11#00
+JP: {END}
+KO: 
+
+[S035BCF]  N11#03
+JP: アムロ{END}
+KO: 아무로{END}
+
+[S035BD3]  N11#04 N11#B1
+JP: カミーユ{END}
+KO: 카미유{END}
+
+[S035BD8]  N11#05
+JP: ジュドー{END}
+KO: 쥬도{END}
+
+[S035BDD]  N11#06
+JP: シーブック{END}
+KO: 시북{END}
+
+[S035BE3]  N11#07
+JP: ベンケイ{END}
+KO: 벤케이{END}
+
+[S035BE8]  N11#08
+JP: リョウ{END}
+KO: 료{END}
+
+[S035BEC]  N11#09
+JP: ハヤト{END}
+KO: 하야토{END}
+
+[S035BF0]  N11#0A
+JP: ムサシ{END}
+KO: 무사시{END}
+
+[S035BF4]  N11#0B
+JP: 豹馬{END}
+KO: 효마{END}
+
+[S035BF9]  N11#0C
+JP: 十三{END}
+KO: 쥬조{END}
+
+[S035BFE]  N11#0D
+JP: ちずる{END}
+KO: 치즈루{END}
+
+[S035C02]  N11#0E
+JP: 大作{END}
+KO: 다이사쿠{END}
+
+[S035C07]  N11#0F
+JP: 小介{END}
+KO: 코스케{END}
+
+[S035C0C]  N11#10
+JP: 洸{END}
+KO: 아키라{END}
+
+[S035C0F]  N11#11
+JP: 万丈{END}
+KO: 반조{END}
+
+[S035C14]  N11#12
+JP: ブライト{END}
+KO: 브라이트{END}
+
+[S035C19]  N11#13
+JP: カイ{END}
+KO: 카이{END}
+
+[S035C1C]  N11#14
+JP: ハヤト{END}
+KO: 하야토{END}
+
+[S035C20]  N11#15
+JP: リュウ{END}
+KO: 류{END}
+
+[S035C24]  N11#16
+JP: ミライ{END}
+KO: 미라이{END}
+
+[S035C28]  N11#17
+JP: セイラ{END}
+KO: 세이라{END}
+
+[S035C2C]  N11#18
+JP: フラウ{END}
+KO: 프라우{END}
+
+[S035C30]  N11#19
+JP: スレッガー{END}
+KO: 슬레가{END}
+
+[S035C36]  N11#1A
+JP: マチルダ{END}
+KO: 마틸다{END}
+
+[S035C3B]  N11#1B
+JP: エマ{END}
+KO: 엠마{END}
+
+[S035C3E]  N11#1C
+JP: レコア{END}
+KO: 레코아{END}
+
+[S035C42]  N11#1D
+JP: ファ{END}
+KO: 화{END}
+
+[S035C45]  N11#1E
+JP: ヘンケン{END}
+KO: 헨켄{END}
+
+[S035C4A]  N11#1F
+JP: クワトロ{END}
+KO: 쿠와트로{END}
+
+[S035C4F]  N11#20
+JP: アポリー{END}
+KO: 아폴리{END}
+
+[S035C54]  N11#21
+JP: ロベルト{END}
+KO: 로베르토{END}
+
+[S035C59]  N11#22
+JP: カツ{END}
+KO: 카츠{END}
+
+[S035C5C]  N11#23
+JP: エル{END}
+KO: 엘{END}
+
+[S035C5F]  N11#24
+JP: ルー{END}
+KO: 루{END}
+
+[S035C62]  N11#25
+JP: イーノ{END}
+KO: 이노{END}
+
+[S035C66]  N11#26
+JP: ビーチャ{END}
+KO: 비차{END}
+
+[S035C6B]  N11#27
+JP: モンド{END}
+KO: 몬도{END}
+
+[S035C6F]  N11#28
+JP: セシリー{END}
+KO: 세실리{END}
+
+[S035C74]  N11#29
+JP: さやか{END}
+KO: 사야카{END}
+
+[S035C78]  N11#2A
+JP: ボス{END}
+KO: 보스{END}
+
+[S035C7B]  N11#2B
+JP: 鉄也{END}
+KO: 테츠야{END}
+
+[S035C80]  N11#2C
+JP: ジュン{END}
+KO: 쥰{END}
+
+[S035C84]  N11#2D
+JP: 甲児{END}
+KO: 코우지{END}
+
+[S035C89]  N11#2E
+JP: ジャック{END}
+KO: 잭{END}
+
+[S035C8E]  N11#2F
+JP: ミチル{END}
+KO: 미치루{END}
+
+[S035C92]  N11#30
+JP: 神宮寺{END}
+KO: 진구지{END}
+
+[S035C99]  N11#31
+JP: 猿丸{END}
+KO: 사루마루{END}
+
+[S035C9E]  N11#32
+JP: マリ{END}
+KO: 마리{END}
+
+[S035CA1]  N11#33
+JP: 麗{END}
+KO: 레이{END}
+
+[S035CA4]  N11#34
+JP: ビューティ{END}
+KO: 뷰티{END}
+
+[S035CAA]  N11#35
+JP: レイカ{END}
+KO: 레이카{END}
+
+[S035CAE]  N11#36
+JP: ギャリソン{END}
+KO: 개리슨{END}
+
+[S035CB4]  N11#37
+JP: トッポ{END}
+KO: 톳포{END}
+
+[S035CB8]  N11#38
+JP: シャア{END}
+KO: 샤아{END}
+
+[S035CBC]  N11#39
+JP: ララァ{END}
+KO: 라라{END}
+
+[S035CC0]  N11#3A
+JP: マ クベ{END}
+KO: 마 쿠베{END}
+
+[S035CC5]  N11#3B
+JP: ランバ ラル{END}
+KO: 람바 랄{END}
+
+[S035CCC]  N11#3C
+JP: ガイア{END}
+KO: 가이아{END}
+
+[S035CD0]  N11#3D
+JP: マッシュ{END}
+KO: 매쉬{END}
+
+[S035CD5]  N11#3E
+JP: オルテガ{END}
+KO: 오르테가{END}
+
+[S035CDA]  N11#3F
+JP: ガルマ{END}
+KO: 가르마{END}
+
+[S035CDE]  N11#40
+JP: ドズル{END}
+KO: 도즐{END}
+
+[S035CE2]  N11#41
+JP: ジェリド{END}
+KO: 제리드{END}
+
+[S035CE7]  N11#42
+JP: カクリコン{END}
+KO: 카크리콘{END}
+
+[S035CED]  N11#43
+JP: ライラ{END}
+KO: 라일라{END}
+
+[S035CF1]  N11#44
+JP: フォウ{END}
+KO: 포우{END}
+
+[S035CF5]  N11#45
+JP: ロザミア{END}
+KO: 로자미아{END}
+
+[S035CFA]  N11#46
+JP: ウッダー{END}
+KO: 우더{END}
+
+[S035CFF]  N11#47
+JP: ブラン{END}
+KO: 브란{END}
+
+[S035D03]  N11#48
+JP: サラ{END}
+KO: 사라{END}
+
+[S035D06]  N11#49
+JP: マウアー{END}
+KO: 마우아{END}
+
+[S035D0B]  N11#4A
+JP: ゲーツ{END}
+KO: 게이츠{END}
+
+[S035D0F]  N11#4B
+JP: ヤザン{END}
+KO: 야잔{END}
+
+[S035D13]  N11#4C
+JP: ラムサス{END}
+KO: 람사스{END}
+
+[S035D18]  N11#4D
+JP: シロッコ{END}
+KO: 시로코{END}
+
+[S035D1D]  N11#4E
+JP: ハマーン{END}
+KO: 하만{END}
+
+[S035D22]  N11#4F
+JP: プル{END}
+KO: 플{END}
+
+[S035D25]  N11#50
+JP: マシュマー{END}
+KO: 마슈마{END}
+
+[S035D2B]  N11#51
+JP: ゴットン{END}
+KO: 고튼{END}
+
+[S035D30]  N11#52
+JP: グレミー{END}
+KO: 글레미{END}
+
+[S035D35]  N11#53
+JP: キャラ{END}
+KO: 캬라{END}
+
+[S035D39]  N11#54
+JP: オウギュスト{END}
+KO: 오귀스트{END}
+
+[S035D40]  N11#55
+JP: アリアス{END}
+KO: 아리아스{END}
+
+[S035D45]  N11#56
+JP: ラカン{END}
+KO: 라칸{END}
+
+[S035D49]  N11#57
+JP: イリア{END}
+KO: 일리아{END}
+
+[S035D4D]  N11#58
+JP: プルツー{END}
+KO: 플투{END}
+
+[S035D52]  N11#59
+JP: ニー{END}
+KO: 니{END}
+
+[S035D55]  N11#5A
+JP: ランス{END}
+KO: 란스{END}
+
+[S035D59]  N11#5B
+JP: ドレル{END}
+KO: 드렐{END}
+
+[S035D5D]  N11#5C
+JP: アンナマリー{END}
+KO: 안나마리{END}
+
+[S035D64]  N11#5D
+JP: ザビーネ{END}
+KO: 자비네{END}
+
+[S035D69]  N11#5E
+JP: カロッゾ{END}
+KO: 카로초{END}
+
+[S035D6E]  N11#5F
+JP: クリス{END}
+KO: 크리스{END}
+
+[S035D72]  N11#60
+JP: バーニィ{END}
+KO: 버니{END}
+
+[S035D77]  N11#61
+JP: アストナージ{END}
+KO: 아스토나지{END}
+
+[S035D7E]  N11#62
+JP: エマリー{END}
+KO: 에마리{END}
+
+[S035D83]  N11#63
+JP: カムラン{END}
+KO: 캄란{END}
+
+[S035D88]  N11#64
+JP: キシリア{END}
+KO: 키시리아{END}
+
+[S035D8D]  N11#65
+JP: ギュネイ{END}
+KO: 귀네이{END}
+
+[S035D92]  N11#66
+JP: ギレン{END}
+KO: 기렌{END}
+
+[S035D96]  N11#67
+JP: クェス{END}
+KO: 퀘스{END}
+
+[S035D9A]  N11#68
+JP: ハモン{END}
+KO: 하몬{END}
+
+[S035D9E]  N11#69
+JP: クランプ{END}
+KO: 크램프{END}
+
+[S035DA3]  N11#6A
+JP: ケーラ{END}
+KO: 케라{END}
+
+[S035DA7]  N11#6B
+JP: コズン{END}
+KO: 코즌{END}
+
+[S035DAB]  N11#6C
+JP: コンスコン{END}
+KO: 콘스콘{END}
+
+[S035DB1]  N11#6D
+JP: デニム{END}
+KO: 데님{END}
+
+[S035DB5]  N11#6E
+JP: ジーン{END}
+KO: 진{END}
+
+[S035DB9]  N11#6F
+JP: スレンダー{END}
+KO: 슬렌더{END}
+
+[S035DBF]  N11#70
+JP: チェーン{END}
+KO: 체인{END}
+
+[S035DC4]  N11#71
+JP: ナナイ{END}
+KO: 나나이{END}
+
+[S035DC8]  N11#72
+JP: ハサウェイ{END}
+KO: 하사웨이{END}
+
+[S035DCE]  N11#73
+JP: バスク{END}
+KO: 바스크{END}
+
+[S035DD2]  N11#74
+JP: ブーン{END}
+KO: 분{END}
+
+[S035DD6]  N11#75
+JP: ベルトーチカ{END}
+KO: 벨토치카{END}
+
+[S035DDD]  N11#76
+JP: リィナ{END}
+KO: 리나{END}
+
+[S035DE1]  N11#77
+JP: レズン{END}
+KO: 레즌{END}
+
+[S035DE5]  N11#78
+JP: コウ{END}
+KO: 코우{END}
+
+[S035DE8]  N11#79
+JP: シュタイナー{END}
+KO: 슈타이너{END}
+
+[S035DEF]  N11#7A
+JP: ガトー{END}
+KO: 가토{END}
+
+[S035DF3]  N11#7B
+JP: デューク{END}
+KO: 듀크{END}
+
+[S035DF8]  N11#7C
+JP: マリア{END}
+KO: 마리아{END}
+
+[S035DFC]  N11#7D
+JP: シャリア{END}
+KO: 샤리아{END}
+
+[S035E01]  N11#7E
+JP: リューネ{END}
+KO: 류네{END}
+
+[S035E06]  N11#7F
+JP: マサキ{END}
+KO: 마사키{END}
+
+[S035E0A]  N11#80
+JP: シュウ{END}
+KO: 슈우{END}
+
+[S035E0E]  N11#81
+JP: ニナ{END}
+KO: 니나{END}
+
+[S035E11]  N11#82
+JP: あしゅら{END}
+KO: 아수라{END}
+
+[S035E16]  N11#83
+JP: ブロッケン{END}
+KO: 브로켄{END}
+
+[S035E1C]  N11#84
+JP: シャーキン{END}
+KO: 샤킨{END}
+
+[S035E22]  N11#85
+JP: ガルーダ{END}
+KO: 가루다{END}
+
+[S035E27]  N11#86
+JP: レビル{END}
+KO: 레빌{END}
+
+[S035E2B]  N11#87
+JP: ひかる{END}
+KO: 히카루{END}
+
+[S035E2F]  N11#88
+JP: カリウス{END}
+KO: 칼리우스{END}
+
+[S035E34]  N11#89
+JP: シナプス{END}
+KO: 시납스{END}
+
+[S035E39]  N11#8A
+JP: キース{END}
+KO: 키스{END}
+
+[S035E3D]  N11#8B
+JP: ルセット{END}
+KO: 루셋{END}
+
+[S035E42]  N11#8C
+JP: ミーア{END}
+KO: 미아{END}
+
+[S035E46]  N11#8D
+JP: ミハル{END}
+KO: 미하루{END}
+
+[S035E4A]  N11#8E
+JP: モンシア{END}
+KO: 몬시아{END}
+
+[S035E4F]  N11#8F
+JP: 胡蝶鬼{END}
+KO: 코쵸키{END}
+
+[S035E56]  N11#90
+JP: 鉄甲鬼{END}
+KO: 텟코키{END}
+
+[S035E5D]  N11#91
+JP: 弓教授{END}
+KO: 유미 교수{END}
+
+[S035E64]  N11#92
+JP: 早乙女博士{END}
+KO: 사오토메{END}
+
+[S035E6F]  N11#93
+JP: 四谷博士{END}
+KO: 요츠야{END}
+
+[S035E78]  N11#94
+JP: ロペット{END}
+KO: 로페트{END}
+
+[S035E7D]  N11#95
+JP: もりもり博士{END}
+KO: 모리모리{END}
+
+[S035E86]  N11#96
+JP: せわし博士{END}
+KO: 세와시{END}
+
+[S035E8E]  N11#97
+JP: のっそり博士{END}
+KO: 놋소리{END}
+
+[S035E97]  N11#98
+JP: シーマ{END}
+KO: 시마{END}
+
+[S035E9B]  N11#99
+JP: デミトリー{END}
+KO: 데미트리{END}
+
+[S035EA1]  N11#9A
+JP: トクワン{END}
+KO: 토쿠완{END}
+
+[S035EA6]  N11#9B
+JP: ドレン{END}
+KO: 드렌{END}
+
+[S035EAA]  N11#9C
+JP: ボラスキニフ{END}
+KO: 보라스키니프{END}
+
+[S035EB1]  N11#9D
+JP: ナイーダ{END}
+KO: 나이다{END}
+
+[S035EB6]  N11#9E
+JP: キリカ{END}
+KO: 키리카{END}
+
+[S035EBA]  N11#9F
+JP: 暗黒大将軍{END}
+KO: 암흑대장군{END}
+
+[S035EC5]  N11#A0
+JP: ハロ{END}
+KO: 하로{END}
+
+[S035EC8]  N11#A1
+JP: 兵士{END}
+KO: 병사{END}
+
+[S035ECD]  N11#A2
+JP: 兵士{END}
+KO: 병사{END}
+
+[S035ED2]  N11#A3
+JP: ヴィガジ{END}
+KO: 비가지{END}
+
+[S035ED7]  N11#A4
+JP: シカログ{END}
+KO: 시카로그{END}
+
+[S035EDC]  N11#A5
+JP: メキボス{END}
+KO: 메키보스{END}
+
+[S035EE1]  N11#A6
+JP: アギーハ{END}
+KO: 아기하{END}
+
+[S035EE6]  N11#A7
+JP: ウェンドロ{END}
+KO: 웬드로{END}
+
+[S035EEC]  N11#A8
+JP: メリー{END}
+KO: 메리{END}
+
+[S035EF0]  N11#A9
+JP: 兵士{END}
+KO: 병사{END}
+
+[S035EF5]  N11#AA
+JP: アル{END}
+KO: 알{END}
+
+[S035EF8]  N11#AB
+JP: 人工知能{END}
+KO: 인공지능{END}
+
+[S035F01]  N11#AC
+JP: 狙撃兵{END}
+KO: 저격병{END}
+
+[S035F08]  N11#AD
+JP: 人工知能改{END}
+KO: 인공지능개{END}
+
+[S035F13]  N11#AE N11#AF
+JP: エリート兵{END}
+KO: 엘리트병{END}
+
+[S035F1A]  N11#B0
+JP: 強化兵{END}
+KO: 강화병{END}
+
+[S035F21]  N11#B2
+JP: {END}
+KO: 
+
+[S035F22]  N11#B3
+JP: {END}
+KO: 
+
+[S035F23]  N11#B4
+JP: {END}
+KO: 
+
+[S035F24]  N11#B5
+JP: {END}
+KO: 
+
+[S035F25]  N11#B6
+JP: {END}
+KO: 
+
+[S035F26]  N11#B7
+JP: {END}
+KO: 
+
+[S035F27]  N11#B8
+JP: {END}
+KO: 
+
+[S035F28]  N11#B9
+JP: {END}
+KO: 
+
+[S035F29]  N11#BA
+JP: {END}
+KO: 
+
+[S035F2A]  N11#BB
+JP: {END}
+KO: 
+
+[S035F2B]  N11#BC
+JP: {END}
+KO: 
+
+[S035F2C]  N11#BD
+JP: {END}
+KO: 
+
+[S035F2D]  N11#BE
+JP: {END}
+KO: 
+
+[S035F2E]  N11#BF
+JP: ーーーー{END}
+KO: 
