@@ -21,7 +21,7 @@
 | 버전 판단 | **v0.8~0.9**(사용자, 2026-11-18): 플레이 가능, 레이아웃 약간 넘침은 감수 |
 | 결과물 | `out/srw3_ko.smc`, `out/srw3_ko.ips` (빌드할 때마다 갱신). 자동 실행은 사본 `out/srw3_auto.smc`/`srw3_clean.smc`만(8절) |
 | 배포 | `dist/`(xdelta·IPS·README.txt·OFL.txt) → `out/srw3_ko_v0.9.zip`. 빌드 후 xdelta는 **다시 만들어야 함**(14절) |
-| 저장소 | git 아님 (커밋 이력 없음). `README.md`(한국어)·`README.ja.md`(일본어), 스크린샷 `docs/images/` 준비됨(14절) |
+| 저장소 | git `main` (2026-11-19 첫 커밋, 작성자 `rity73` noreply — 저장소 로컬 설정). 원문(JP:) 포함해 올리기로 사용자 결정. `.gitignore`가 ROM·`out/`·Mesen·캡처 제외. 원격 미연결(14절) |
 
 ## 3. 작업 방법
 
@@ -219,4 +219,4 @@ python srwtext.py build --no-tr    # 회귀 검사용: 번역 없이 재배치�
   - 헤더(512B) 붙은 ROM: xdelta는 `target window checksum mismatch`로 거부, **Flips IPS는 "성공"이라며 망가진 ROM 생성** → 안내는 xdelta 우선.
 - README 스크린샷: `docs/images/*.png`(256×224를 2배 확대, `_jp`는 원본 ROM 같은 장면). 원본은 `tools/shots/rd_boot`·`rd_game`(한국어, `out/srw3_clean.smc`), `rd_jp`·`rd_jpboot`(원본 사본 `out/readme_jp.smc`), `rd_im`(사용자 상태 저장 사본). 인터미션 첫 프레임은 상태 저장 안의 옛 VRAM이라 예전 문구가 보이므로 메뉴를 다시 그린 뒤 프레임을 씀.
 - README 링크는 저장소를 `game-patch-ko/srw3-ko`로 가정함 — 실제 이름이 다르면 두 README의 링크를 고칠 것.
-- **git에 올리기 전 주의**: `script/*.txt`의 `JP:` 줄, `tr/*.tsv`·`*_list.txt`, `analysis/`의 덤프에는 일본어 원문 전체가 들어 있음. reka-ko는 원문을 저장소에 넣지 않았음. 올릴 범위는 사용자 결정 필요. 원본 ROM, `out/`, `tools/mesen`(100MB), `tools/shots`(57MB), `tools/patchers`는 제외 대상.
+- git: 일본어 원문(`script/` `JP:`, `tr/`, `analysis/` 덤프)은 **포함해 올리기로 사용자 결정**(2026-11-19). 원본 ROM·`out/`·`tools/mesen`·`tools/shots`·`tools/patchers`·`tools/rt/*/`는 `.gitignore`로 제외. 글꼴 경로는 `SRW3_FONTDIR`(없으면 `%LOCALAPPDATA%/Microsoft/Windows/Fonts`) — 공개 저장소에 사용자 이름 경로를 남기지 않기 위해 바꿈(ROM 결과 동일 확인).
