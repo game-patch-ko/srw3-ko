@@ -6,7 +6,7 @@
 
 スーパーファミコン **「第3次スーパーロボット大戦」**（1993）のセリフ、メニュー、ステージタイトル、タイトルロゴまでを韓国語に翻訳した非公式ファンパッチ
 
-[![Release](https://img.shields.io/badge/release-v0.9.1%20beta-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
+[![Release](https://img.shields.io/badge/release-v0.9.1-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
 [![Platform](https://img.shields.io/badge/platform-SFC%20%2F%20SNES-6b5b95?style=flat-square)](#-パッチの当て方)
 [![Patch](https://img.shields.io/badge/patch-xdelta%20%C2%B7%20IPS-informational?style=flat-square)](#-パッチの当て方)
 [![ROM](https://img.shields.io/badge/ROM-1.5MB%20%E2%86%92%202MB-2e8b57?style=flat-square)](#-仕組み)

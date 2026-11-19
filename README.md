@@ -6,7 +6,7 @@
 
 슈퍼 패미컴 **「第3次スーパーロボット大戦」**(1993)의 대사, 메뉴, 스테이지 제목, 타이틀 로고까지 한국어로 옮긴 비공식 팬 패치
 
-[![Release](https://img.shields.io/badge/release-v0.9.1%20beta-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
+[![Release](https://img.shields.io/badge/release-v0.9.1-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
 [![Platform](https://img.shields.io/badge/platform-SFC%20%2F%20SNES-6b5b95?style=flat-square)](#-패치-방법)
 [![Patch](https://img.shields.io/badge/patch-xdelta%20%C2%B7%20IPS-informational?style=flat-square)](#-패치-방법)
 [![ROM](https://img.shields.io/badge/ROM-1.5MB%20%E2%86%92%202MB-2e8b57?style=flat-square)](#-어떻게-동작하나요)
