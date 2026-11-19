@@ -20,3 +20,4 @@ tools/rt/*.png
 __pycache__/
 *.pyc
 tools/emu/
+tools/fonts/

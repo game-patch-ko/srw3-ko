@@ -53,7 +53,10 @@ def render_glyph(ch, font, yoff):
     return bytes(out)
 
 
-def build_font(path=DEFAULT_FONT, index=0, size=12):
+def build_font(path=None, index=0, size=None):
+    # SRW3_KOFONT / SRW3_KOFONT_SIZE: try another font without editing this file (font comparison)
+    path = path or os.environ.get('SRW3_KOFONT') or DEFAULT_FONT
+    size = size or int(os.environ.get('SRW3_KOFONT_SIZE', '12'))
     font = ImageFont.truetype(path, size, index=index)
     # place glyph so that its ink box sits inside rows 2..13
     top = min(font.getbbox(c)[1] for c in HANGUL[:200])
