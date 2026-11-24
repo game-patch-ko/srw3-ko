@@ -1,7 +1,7 @@
 -- Load a copy of the user's Mesen save state (intermission), press the given buttons, take screenshots.
 -- loadSavestate must run inside a CPU exec callback, so it is done from the NMI handler ($00:828F).
 -- Intermission command menu order: 저장하기, 파워업, 능력보기, 교체, 유닛 폐기, 다음 맵 (cursor starts on 저장하기)
-local OUT = "C:/work/sfc/tools/shots/im2/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/im2/"
 local STATE = OUT .. "user_state.mss"
 local SEQ = {
   {60, "down"}, {100, "a"},                 -- 파워업

@@ -1,5 +1,5 @@
 
-local out = io.open("C:/work/sfc/tools/rt/r13_demo.txt", "w")
+local out = io.open("C:/work/sfc/srw3-ko/tools/rt/r13_demo.txt", "w")
 local n = 0
 local MODE = "demo"
 local seen = {}

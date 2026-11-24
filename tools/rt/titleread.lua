@@ -1,7 +1,7 @@
 -- Which code reads which ROM area while the stage 1 title (第1話『暗雲』) is being set up and shown.
 -- Logs unique (PC, ROM bank) pairs for reads in banks $80-$AF / $00-$2F between frames A and B,
 -- plus VRAM DMA writes ($2116/$2117 address, $4302.. source) via register write callbacks.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6600, 6820
 local n = 0
 local M = emu.memType.snesMemory

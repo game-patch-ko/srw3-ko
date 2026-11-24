@@ -1,6 +1,6 @@
 -- Sprite table ($00:0500, 544 bytes, DMA'd to OAM each frame) while the stage title is shown,
 -- and which code writes it (PC, first value) in frames A..B.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6870, 6880
 local n = 0
 local M = emu.memType.snesMemory

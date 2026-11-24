@@ -1,5 +1,5 @@
 -- Who writes the RAM buffers that become the stage title tiles ($7E:8000-$7E:A7FF) before frame 6775.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6776, 6860
 local n = 0
 local M = emu.memType.snesMemory

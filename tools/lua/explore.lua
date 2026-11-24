@@ -1,5 +1,5 @@
 -- auto-press: Start/A pulses; screenshot every SHOT frames; log block/msg vars
-local outdir = "C:/work/sfc/tools/shots/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/"
 local SHOT, LAST = 300, 9000
 local n = 0
 local log = io.open(outdir .. "log.txt", "w")

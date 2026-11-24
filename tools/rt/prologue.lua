@@ -1,4 +1,4 @@
-local outdir = "C:/work/sfc/tools/rt/prologue/"
+local outdir = "C:/work/sfc/srw3-ko/tools/rt/prologue/"
 local n = 0
 emu.addEventCallback(function()
   local inp = {}

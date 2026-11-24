@@ -1,4 +1,4 @@
-local outdir = "C:/work/sfc/tools/shots/ng/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/ng/"
 local n = 0
 local hits = {CA09=0, CBC6=0, WRAP=0, HANG=0}
 local firstCA = nil

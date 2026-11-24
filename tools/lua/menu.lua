@@ -1,4 +1,4 @@
-local outdir = "C:/work/sfc/tools/shots/ng/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/ng/"
 local n = 0
 local ca = 0
 emu.addMemoryCallback(function() ca = ca + 1 end, emu.callbackType.exec, 0x80CA09)

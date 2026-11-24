@@ -1,5 +1,5 @@
 
-local OUT = "C:/work/sfc/tools/shots/vlko/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/vlko/"
 local T = {{0,121}}
 local M = emu.memType.snesMemory
 local log = io.open(OUT .. "lay.txt", "w")

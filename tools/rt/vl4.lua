@@ -1,5 +1,5 @@
 
-local OUT = "C:/work/sfc/tools/shots/vl4/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/vl4/"
 local T = {{1,0},{1,1},{1,2},{1,3},{1,4},{1,5},{1,6},{1,7},{1,8},{1,9}}
 local M = emu.memType.snesMemory
 local log = io.open(OUT .. "lay.txt", "w")

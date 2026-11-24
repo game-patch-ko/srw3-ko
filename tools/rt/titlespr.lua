@@ -1,5 +1,5 @@
 -- While the title is up: every ROM read (banks 80-BF and 00-3F) with its PC, frames A..B.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6870, 6872
 local n = 0
 local log = io.open(OUT .. "titlespr.txt", "w")

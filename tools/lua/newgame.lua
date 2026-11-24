@@ -1,5 +1,5 @@
 -- start a new game from title, advance text with A, capture every SHOT frames
-local outdir = "C:/work/sfc/tools/shots/ng/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/ng/"
 local SHOT, LAST = 120, 16000
 local n = 0
 local log = io.open(outdir .. "log.txt", "w")

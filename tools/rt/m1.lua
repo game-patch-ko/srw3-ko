@@ -1,5 +1,5 @@
 
-local OUT = "C:/work/sfc/tools/shots/m1/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/m1/"
 local n = 0
 local seq = {{9000,"b"},{9060,"b"},{9120,"up"},{9150,"up"},{9180,"up"},{9210,"up"},{9260,"a"},{9400,"down"},{9460,"down"},{9520,"a"}}
 emu.addEventCallback(function()

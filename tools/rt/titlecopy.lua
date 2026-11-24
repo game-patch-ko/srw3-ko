@@ -1,6 +1,6 @@
 -- Who reads the decompressed title font ($7F:0000-$7F:7FFF) after it is unpacked (frame 6708) and
 -- before the title shows; log PC, registers, the direct page pointers, first few addresses.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6708, 6880
 local n = 0
 local M = emu.memType.snesMemory

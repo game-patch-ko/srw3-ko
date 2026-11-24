@@ -1,5 +1,5 @@
 -- Find the decompressor: code writing $7F:0000-$7F:FFFF and the ROM ranges read, frames A..B.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6680, 6772
 local n = 0
 local M = emu.memType.snesMemory

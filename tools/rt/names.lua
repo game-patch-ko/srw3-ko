@@ -1,5 +1,5 @@
 
-local outdir = "C:/work/sfc/tools/shots/names/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/names/"
 local n = 0
 local MODE = "game"
 local seq = {{9000,'a'},{9120,'b'},{9200,'right'},{9230,'right'},{9300,'a'},{9420,'down'},{9480,'a'},{9600,'b'},{9660,'b'},{9740,'start'},{9860,'b'},{9940,'x'},{10060,'b'},{10140,'y'}}

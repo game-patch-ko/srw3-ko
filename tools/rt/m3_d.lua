@@ -1,5 +1,5 @@
 
-local OUT = "C:/work/sfc/tools/shots/m3/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/m3/"
 local n = 0
 
 local seenJ = {}

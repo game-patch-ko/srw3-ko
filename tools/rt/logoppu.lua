@@ -1,5 +1,5 @@
 -- Dump VRAM, CGRAM and PPU state while the stage title is on screen.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local AT = 4650
 local n = 0
 emu.addEventCallback(function()

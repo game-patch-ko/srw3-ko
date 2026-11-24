@@ -1,5 +1,5 @@
 -- probe: game mode byte $95 (dispatcher $81:8C3F, table $81:8C48; 0x0A = intermission init $81:8FBE)
-local OUT = "C:/work/sfc/tools/shots/im/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/im/"
 local SETAT, SETVAL = 9100, 0x0A
 local n = 0
 local M = emu.memType.snesMemory

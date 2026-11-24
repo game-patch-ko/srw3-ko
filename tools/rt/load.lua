@@ -1,6 +1,6 @@
 -- title -> LOAD -> slot 1, then the given presses; screenshot every 30 frames
 -- edit SEQ for the screens to visit. Run with out/srw3_auto.smc (its .srm = copy of the user's save).
-local OUT = "C:/work/sfc/tools/shots/ld/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/ld/"
 local SEQ = {
   -- title menu (START CONTINUE LOAD, horizontal) is up by frame ~4520
   {4560, "right"}, {4600, "right"},  -- START -> CONTINUE -> LOAD

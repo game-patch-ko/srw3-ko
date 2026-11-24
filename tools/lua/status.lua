@@ -1,4 +1,4 @@
-﻿local outdir = "C:/work/sfc/tools/shots/status/"
+﻿local outdir = "C:/work/sfc/srw3-ko/tools/shots/status/"
 local n = 0
 local seq = {{9000,'a'},{9120,'b'},{9200,'right'},{9230,'right'},{9300,'up'},{9360,'a'},{9700,'right'},{9800,'right'},{9900,'b'},{9960,'b'}}
 emu.addEventCallback(function()

@@ -1,6 +1,6 @@
 -- Stage title: log every glyph draw (A = char code) with the caller (return address on the stack)
 -- around frame 6620, and which glyph path runs ($80:CA09 vs $80:CBC6 vs the KO wrapper $B0:8025).
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6700, 6860
 local n = 0
 local M = emu.memType.snesMemory

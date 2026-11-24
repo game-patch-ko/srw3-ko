@@ -2,9 +2,9 @@
 For every ROM kanji glyph, find the most similar JIS X 0208 kanji and compare with the table."""
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np, json, sys
-ROM = open('C:/work/sfc/Dai-3-Ji Super Robot Taisen (J).smc', 'rb').read()
+ROM = open('C:/work/sfc/srw3-ko/Dai-3-Ji Super Robot Taisen (J).smc', 'rb').read()
 tbl = {}
-for line in open('C:/work/sfc/analysis/srw3_jp.tbl', encoding='utf-8'):
+for line in open('C:/work/sfc/srw3-ko/analysis/srw3_jp.tbl', encoding='utf-8'):
     k, _, v = line.rstrip('\n').partition('=')
     if len(k) == 4 and k[0] == 'F' and k[1] in '012':
         tbl[(int(k[1]) << 8) | int(k[2:], 16)] = v

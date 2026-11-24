@@ -8,7 +8,7 @@ end, emu.eventType.inputPolled)
 emu.addEventCallback(function()
   n = n + 1
   if n == 9100 then
-    local f = io.open("C:/work/sfc/tools/shots/wram.bin", "wb")
+    local f = io.open("C:/work/sfc/srw3-ko/tools/shots/wram.bin", "wb")
     local t = {}
     for i = 0, 0x1FFFF do t[#t + 1] = string.char(emu.read(0x7E0000 + i, emu.memType.snesMemory)) end
     f:write(table.concat(t)); f:close()

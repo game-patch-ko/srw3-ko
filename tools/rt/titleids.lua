@@ -1,5 +1,5 @@
 -- Metasprite ids drawn while the title is up ($0A id, $0B set; handler $80:D595).
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 6870, 6871
 local n = 0
 local M = emu.memType.snesMemory

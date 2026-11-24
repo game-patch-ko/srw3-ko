@@ -1,5 +1,5 @@
 -- usage: frames list via global; take screenshots at given frames then stop
-local outdir = "C:/work/sfc/tools/shots/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/"
 local frames = {300, 600, 900, 1200}
 local n = 0
 local idx = 1

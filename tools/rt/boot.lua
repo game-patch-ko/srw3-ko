@@ -1,5 +1,5 @@
 -- Screenshots every 150 frames from power-on to the title menu (no input).
-local OUT = "C:/work/sfc/tools/shots/boot/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/boot/"
 local n = 0
 emu.addEventCallback(function()
   n = n + 1

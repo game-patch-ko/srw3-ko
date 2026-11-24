@@ -1,4 +1,4 @@
-local outdir = "C:/work/sfc/tools/shots/ng/"
+local outdir = "C:/work/sfc/srw3-ko/tools/shots/ng/"
 local n, polls = 0, 0
 local log = io.open(outdir .. "inp.txt", "w")
 emu.addEventCallback(function()

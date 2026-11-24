@@ -1,6 +1,6 @@
 -- Log every call of the LZ decompressor $80:885A (src $10-$12, dst $13-$14 bank $15) between frames A and B,
 -- with the caller (return address) and how far the source pointer advanced.
-local OUT = "C:/work/sfc/tools/shots/"
+local OUT = "C:/work/sfc/srw3-ko/tools/shots/"
 local A, B = 0, 4700
 local n = 0
 local M = emu.memType.snesMemory

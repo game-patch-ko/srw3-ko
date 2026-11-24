@@ -1,4 +1,4 @@
-﻿local out = io.open("C:/work/sfc/tools/rt/wlim.txt", "w")
+﻿local out = io.open("C:/work/sfc/srw3-ko/tools/rt/wlim.txt", "w")
 local n = 0
 local seen = {}
 emu.addMemoryCallback(function()
