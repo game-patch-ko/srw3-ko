@@ -6,7 +6,7 @@
 
 スーパーファミコン **「第3次スーパーロボット大戦」**（1993）のセリフ、メニュー、ステージタイトル、タイトルロゴまでを韓国語に翻訳した非公式ファンパッチ
 
-[![Release](https://img.shields.io/badge/release-v0.9.1-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
+[![Release](https://img.shields.io/badge/release-v0.9.2-c0392b?style=flat-square)](https://github.com/game-patch-ko/srw3-ko/releases)
 [![Platform](https://img.shields.io/badge/platform-SFC%20%2F%20SNES-6b5b95?style=flat-square)](#-パッチの当て方)
 [![Patch](https://img.shields.io/badge/patch-xdelta%20%C2%B7%20IPS-informational?style=flat-square)](#-パッチの当て方)
 [![ROM](https://img.shields.io/badge/ROM-1.5MB%20%E2%86%92%202MB-2e8b57?style=flat-square)](#-仕組み)
@@ -125,8 +125,8 @@ xdelta3 -d -s "Dai-3-Ji Super Robot Taisen (J).smc" srw3_ko.xdelta srw3_ko.smc
 | 項目 | 値 |
 |---|---|
 | サイズ | 2,097,152バイト（2MB） |
-| CRC32 | `906E0742` |
-| SHA-1 | `e675eb578dc69e16738e1f4683fadb302444835d` |
+| CRC32 | `90A071BB` |
+| SHA-1 | `c22efe75e551e925c59bd72c6cc0461887206aa8` |
 
 できあがった `srw3_ko.smc` をエミュレータでそのまま開きます。
 

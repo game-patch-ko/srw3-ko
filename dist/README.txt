@@ -1,4 +1,4 @@
-제3차 슈퍼로봇대전 (SFC) 한글 패치  v0.9.1
+제3차 슈퍼로봇대전 (SFC) 한글 패치  v0.9.2
 ==================================================
 
 슈퍼 패미컴용 「第3次スーパーロボット大戦」를 한국어로 옮기는 IPS 패치입니다.
@@ -30,7 +30,7 @@
      - 웹: Rom Patcher JS (https://www.marcrobledo.com/RomPatcher.js/)
      - Windows 프로그램: Delta Patcher
      - 명령줄: xdelta3 -d -s 원본.smc srw3_ko.xdelta srw3_ko.smc
-  3. 결과 ROM은 2MB(2,097,152바이트)이고 CRC32는 906E0742입니다.
+  3. 결과 ROM은 2MB(2,097,152바이트)이고 CRC32는 90A071BB입니다.
      만든 ROM을 에뮬레이터에서 바로 엽니다.
 
   IPS를 쓰는 경우: Mesen, snes9x 등은 ROM과 같은 폴더에 같은 이름의 .ips가 있으면

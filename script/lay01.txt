@@ -256,7 +256,7 @@ KO: 그 수치는 더 이상{n} 못 올려」{END}
 
 [S01DFC8]  (code-called, added 2026-11-18)
 JP: {F5:00}かかるぜ、いいかい?」{END}
-KO: {F5:00} 드는데, 괜찮아?」{END}
+KO: {F5:00} 드는데 할래?」{END}
 
 [S01DFD6]  (code-called, added 2026-11-18)
 JP: おいおい、資金がたりねーぞ。{n} ないそではふれねぇって」{END}

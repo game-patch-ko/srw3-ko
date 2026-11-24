@@ -48,4 +48,4 @@ body:
     id: version
     attributes:
       label: 패치 버전 / パッチのバージョン
-      placeholder: "v0.9.1"
+      placeholder: "v0.9.2"
